@@ -1,58 +1,68 @@
-<!DOCTYPE html>
-<html>
-<body>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
- 
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
- 
- 
-<?php
-$url = 'https://script.google.com/macros/s/AKfycbwiL6N4SPJ-JtJyIpNBbJ-DrFak1gjEAvb2SvAfJ1DSQhLLpmc/exec?action=selects&sheet_name=member' ; // path to your JSON file
-$data = file_get_contents($url); // put the contents of the file into a variable
-$characters = json_decode($data); // decode the JSON feed
-?>
- 
- 
-<div class="container">
- 
-<div class="jumbotron jumbotron-fluid">
- <div class="container">
-  <center><h1 class="display-4">API GOOGLE APPSCRIPT</h1>
-   <p class="lead">ทะเบียนนักเรียน</p>
-   <a class="btn btn-primary" href="index.php" role="button">เพิ่มสมาชิก</a></center>
- </div>
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">Cover</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <h1>Cover your page.</h1>
+    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+    </p>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+  </footer>
 </div>
- 
-<table class="table">
- <thead>
-   <tr>
-     <th scope="col">num</th>
-     <th scope="col">รหัสนักเรียน</th>
-     <th scope="col">ชื่อ-สกุล</th>
-     <th scope="col">อายุ</th>
-     <th scope="col">จัดการ</th>
-   </tr>
- </thead>
- <tbody>
- <?php foreach ($characters as $character) {
-?>
-   <tr>
-     <td><?php  echo $character->num; ?> </td>
-     <td><?php  echo $character->id; ?> </td>
-     <td><?php  echo $character->name; ?></td>
-     <td><?php  echo $character->age; ?></td>
-     <td>
-         <a href="delete.php?num=<?php echo $character->num ?>"> ลบ  </a>
-         <a href="edit.php?num=<?php echo $character->num ?>"> แก้ไข </a>
-   </td>
-   </tr>
- <?php } ?>
- </tbody>
-</table>
- 
-</div>
-</body>
+
+
+    
+  </body>
 </html>
