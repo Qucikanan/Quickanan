@@ -12,7 +12,8 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse">
+  
+    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
