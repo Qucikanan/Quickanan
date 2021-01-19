@@ -54,14 +54,15 @@
   </nav>
 <main>
   <section>
-
-
   <br>
   <div class="container">
     <div class="jumbotron">
       <h1 class="display-4">QuicKanan</h1> <h6 class="lead">ระบบลงคะแนนแบบ Paperless </h6>
       <hr class="my-4">
       <h6 class="lead">ลงทะเบียนเปิดการอัพเดทอัตโนมัติ นักกีฬาจะได้รับข้อความแจ้งเตือนจาก Line ทุกครั้งที่มีรายการอัพเดทคะแนนของคุณ</h6>
+      <button type="link"  onclick=" window.open('https://liff.line.me/1655586880-a1EbXxev','_blank')" class="btn btn-primary btn-lg btn-block">Register</button>
+    </section>
+  </div>
   </main>
 </body>
 </html>
