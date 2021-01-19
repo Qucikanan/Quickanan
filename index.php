@@ -61,7 +61,7 @@
     <div class="jumbotron">
       <h1 class="display-4">QuicKanan</h1> <h6 class="lead">ระบบลงคะแนนแบบ Paperless </h6>
       <hr class="my-4">
-      <h6 class="lead"></h6>
+      <h6 class="lead">ลงทะเบียนเปิดการอัพเดทอัตโนมัติ นักกีฬาจะได้รับข้อความแจ้งเตือนจาก Line ทุกครั้งที่มีรายการอัพเดทคะแนนของคุณ</h6>
   </main>
 </body>
 </html>
