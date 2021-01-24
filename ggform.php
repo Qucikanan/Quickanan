@@ -15,6 +15,7 @@
     &entry.42101711=${profile.userId}
     &entry.1118901992=${profile.displayName}`
      );
+   <input type="hidden" name="entry.42101711" value="" id="entry_42101711">
    }
  
   async function main() {
