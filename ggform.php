@@ -5,7 +5,6 @@
 <body>
  
 <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
- 
 <script>
  
   async function getUserProfile() {
@@ -15,7 +14,7 @@
     &entry.42101711=${profile.userId}
     &entry.1118901992=${profile.displayName}`
      );
-   <input type="hidden" name="entry.42101711" value="" id="entry_42101711">
+   
    }
  
   async function main() {
