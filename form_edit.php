@@ -3,6 +3,7 @@
 <body>
  
 <h2>API GOOGLE APPSCRIPT</h2>
+ <?php
 $num =  $_GET['num'];
 $url = 'https://script.google.com/macros/s/AKfycbwrWpXYEqTxCyDuMNInhxbDbDXRVm-UsOKrakn_YC7wnYfUQZM/exec?action=selects&sheet_name=member' ; // path to your JSON file
 $data = file_get_contents($url); // put the contents of the file into a variable
