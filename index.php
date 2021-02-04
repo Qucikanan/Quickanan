@@ -77,7 +77,7 @@ body {
       <h2 class="lead" align = "center"  > ทดลองลงคะแนนของคุณ </h2>
       <br>
       <center>
-    <iframe src="https://www.appsheet.com/start/da9f8b4d-6e20-47aa-a9f8-de67db3042da?refresh=1&wipe=1" style="border:none;" width="400" height="600"/>
+    <iframe src="https://www.appsheet.com/start/da9f8b4d-6e20-47aa-a9f8-de67db3042da?refresh=1&wipe=1" style="border:none;" width="320" height="568"/>
         </center>
     </section>
   
