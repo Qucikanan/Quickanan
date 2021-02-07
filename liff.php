@@ -137,6 +137,14 @@
 
         }
       ])
+       .then(() => {
+    console.log('message sent');
+  })
+  .catch((err) => {
+    console.log('error', err);
+  });
+      
+      
       if (result) {
         alert(`[${result.status}] Message sent!`)
       } else {
