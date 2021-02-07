@@ -20,100 +20,121 @@
         {
           "type": "flex",
           "altText": "Flex Message",
-          "contents": {
-            "type": "bubble",
-            "body": {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "md",
-              "contents": [
-                {
-                  "type": "text",
-                  "text": "BROWN'S ADVENTURE",
-                  "size": "xl",
-                  "gravity": "center",
-                  "weight": "bold",
-                  "wrap": true
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "spacing": "sm",
-                  "margin": "lg",
-                  "contents": [
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Date",
-                          "flex": 1,
-                          "size": "sm",
-                          "color": "#AAAAAA"
-                        },
-                        {
-                          "type": "text",
-                          "text": "Monday 25, 9:00PM",
-                          "flex": 4,
-                          "size": "sm",
-                          "color": "#666666",
-                          "wrap": true
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
-                        {
-                          "type": "text",
-                          "text": "Place",
-                          "flex": 1,
-                          "size": "sm",
-                          "color": "#AAAAAA"
-                        },
-                        {
-                          "type": "text",
-                          "text": "LINE Thailand",
-                          "flex": 4,
-                          "size": "sm",
-                          "color": "#666666",
-                          "wrap": true
-                        }
-                      ]
-                    },
-                    {
-                      "type": "box",
-                      "layout": "vertical",
-                      "margin": "xxl",
-                      "contents": [
-                        {
-                          "type": "spacer"
-                        },
-                        {
-                          "type": "image",
-                          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/linecorp_code_withborder.png",
-                          "size": "xl",
-                          "aspectMode": "cover"
-                        },
-                        {
-                          "type": "text",
-                          "text": "You can enter the theater by using this code instead of a ticket",
-                          "margin": "xxl",
-                          "size": "xs",
-                          "color": "#AAAAAA",
-                          "wrap": true
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
+          "contents":{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://www.img.in.th/images/d1ac5064c21cb76af3bfda9207379a69.th.png",
+    "size": "full",
+    "aspectRatio": "20:20",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "http://linecorp.com/"
+    },
+    "margin": "none"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "333 IDPA 2021",
+        "weight": "bold",
+        "size": "xl",
+        "wrap": true,
+        "align": "center"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "lg",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Place",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1
+              },
+              {
+                "type": "text",
+                "text": "333 Shooting rang Rangsit, Pathumtani",
+                "wrap": true,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "spacing": "sm",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Date",
+                "color": "#aaaaaa",
+                "size": "sm",
+                "flex": 1
+              },
+              {
+                "type": "text",
+                "text": "21 March 2021  ",
+                "wrap": true,
+                "color": "#666666",
+                "size": "sm",
+                "flex": 5
+              }
+            ]
           }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "uri": "https://practiscore.com/333-shooting-range-rangsit-2021/register",
+          "label": "Register"
+        }
+      },
+      {
+        "type": "button",
+        "style": "link",
+        "height": "sm",
+        "action": {
+          "type": "uri",
+          "label": "รายละเอียด",
+          "uri": "https://quickanan.herokuapp.com/event1.php"
+        }
+      },
+      {
+        "type": "spacer",
+        "size": "sm"
+      }
+    ],
+    "flex": 0
+  }
+} 
+
+
         }
       ])
       if (result) {
