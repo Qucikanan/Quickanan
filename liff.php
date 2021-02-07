@@ -16,7 +16,7 @@
   <script src="https://static.line-scdn.net/liff/edge/versions/2.7.1/sdk.js"></script>
   <script>
     async function sendShare() {
-      const result = await liff.shareTargetPicker([
+      const result = await liff.sendMessages([
         {
           "type": "flex",
           "altText": "Flex Message",
