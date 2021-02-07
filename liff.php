@@ -111,7 +111,7 @@
         "height": "sm",
         "action": {
           "type": "uri",
-          "uri": "https://practiscore.com/333-shooting-range-rangsit-2021/register",
+          "uri": "https://line.me/ti/p/0CJB3-AoAu",
           "label": "Register"
         }
       },
