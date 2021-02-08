@@ -130,7 +130,7 @@
         "offsetStart": "7%"
       }
     ],
-    "height": "35px"
+    "height": "40px"
   }
 }
 
