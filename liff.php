@@ -22,117 +22,117 @@
           "altText": "Flex Message",
           "contents":{
   "type": "bubble",
-  "hero": {
-    "type": "image",
-    "url": "https://www.img.in.th/images/d1ac5064c21cb76af3bfda9207379a69.th.png",
-    "size": "full",
-    "aspectRatio": "20:20",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "http://linecorp.com/"
-    },
-    "margin": "none"
-  },
+  "size": "giga",
   "body": {
     "type": "box",
-    "layout": "vertical",
+    "layout": "horizontal",
     "contents": [
       {
-        "type": "text",
-        "text": "333 IDPA 2021",
-        "weight": "bold",
-        "size": "xl",
-        "wrap": true,
-        "align": "center"
+        "type": "image",
+        "url": "https://www.img.in.th/images/d1ac5064c21cb76af3bfda9207379a69.th.png",
+        "size": "full",
+        "align": "center",
+        "flex": 5
       },
       {
         "type": "box",
         "layout": "vertical",
-        "margin": "lg",
-        "spacing": "sm",
         "contents": [
           {
-            "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
-            "contents": [
-              {
-                "type": "text",
-                "text": "Place",
-                "color": "#aaaaaa",
-                "size": "sm",
-                "flex": 1
-              },
-              {
-                "type": "text",
-                "text": "333 Shooting rang Rangsit, Pathumtani",
-                "wrap": true,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5
-              }
-            ]
+            "type": "text",
+            "text": "333 IDPA 2021",
+            "color": "#ffffff",
+            "size": "xl",
+            "weight": "bold",
+            "style": "normal",
+            "align": "center",
+            "offsetTop": "10%"
+          },
+          {
+            "type": "text",
+            "text": "21 March 2021",
+            "color": "#ffffff",
+            "align": "center",
+            "weight": "bold",
+            "style": "normal",
+            "offsetTop": "10%"
           },
           {
             "type": "box",
-            "layout": "baseline",
-            "spacing": "sm",
+            "layout": "vertical",
             "contents": [
               {
-                "type": "text",
-                "text": "Date",
-                "color": "#aaaaaa",
-                "size": "sm",
-                "flex": 1
-              },
-              {
-                "type": "text",
-                "text": "21 March 2021  ",
-                "wrap": true,
-                "color": "#666666",
-                "size": "sm",
-                "flex": 5
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "<<รายละเอียด>>",
+                  "uri": "https://quickanan.herokuapp.com/event1.php"
+                },
+                "color": "#ffffff"
               }
-            ]
+            ],
+            "backgroundColor": "#404040",
+            "cornerRadius": "10px",
+            "height": "20%",
+            "justifyContent": "center",
+            "margin": "lg",
+            "alignItems": "center",
+            "offsetTop": "10%"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "ลงทะเบียน",
+                  "uri": "https://line.me/ti/p/0CJB3-AoAu"
+                },
+                "color": "#404040"
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "cornerRadius": "10px",
+            "height": "20%",
+            "justifyContent": "center",
+            "margin": "lg",
+            "alignItems": "center",
+            "offsetTop": "10%"
           }
-        ]
+        ],
+        "flex": 5
       }
-    ]
+    ],
+    "backgroundColor": "#404040"
   },
   "footer": {
     "type": "box",
-    "layout": "vertical",
-    "spacing": "sm",
+    "layout": "baseline",
     "contents": [
       {
-        "type": "button",
-        "style": "link",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "uri": "https://line.me/ti/p/0CJB3-AoAu",
-          "label": "Register"
-        }
+        "type": "icon",
+        "url": "https://www.img.in.th/images/8d7a71c4f18561cf7c36b1c16a971fd4.png",
+        "size": "xl",
+        "margin": "none",
+        "offsetBottom": "80%",
+        "offsetStart": "8%"
       },
       {
-        "type": "button",
-        "style": "link",
-        "height": "sm",
-        "action": {
-          "type": "uri",
-          "label": "รายละเอียด",
-          "uri": "https://quickanan.herokuapp.com/event1.php"
-        }
-      },
-      {
-        "type": "spacer",
-        "size": "sm"
+        "type": "text",
+        "text": "333 Shooting Range Rangsit, Pathumthani",
+        "margin": "xl",
+        "size": "xs",
+        "align": "start",
+        "style": "normal",
+        "offsetBottom": "100%",
+        "offsetStart": "7%"
       }
     ],
-    "flex": 0
+    "height": "30px"
   }
-} 
+}
 
 
         }
