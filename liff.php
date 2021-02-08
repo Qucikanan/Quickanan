@@ -126,7 +126,7 @@
         "size": "xs",
         "align": "start",
         "style": "normal",
-        "offsetBottom": "70%",
+        "offsetBottom": "90%",
         "offsetStart": "7%"
       }
     ],
