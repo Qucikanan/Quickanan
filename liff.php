@@ -126,11 +126,11 @@
         "size": "xs",
         "align": "start",
         "style": "normal",
-        "offsetBottom": "90%",
+        "offsetBottom": "100%",
         "offsetStart": "7%"
       }
     ],
-    "height": "40px"
+    "height": "35px"
   }
 }
 
