@@ -126,7 +126,7 @@
         "size": "xs",
         "align": "start",
         "style": "normal",
-        "offsetBottom": "130%",
+        "offsetBottom": "xl",
         "offsetStart": "7%"
       }
     ],
