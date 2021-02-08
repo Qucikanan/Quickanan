@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Stage 2</title>
+  <title>Stage 1</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -57,22 +57,13 @@ body {
     </div>
   </nav>
   <section>
-  <div class="container">
-    <div class="jumbotron">
-  <h2>เริ่มต้นใช้งาน</h2>
-      <h5>1.กดปุ่มบันทึกคะแนน stage... </h5>
-      <h5>2.กรอกหมายเลขนักกีฬาในช่อง No. [ตัวอย่าง 1 , 24 , 123]</h5>
-      <h5>3.กดปุ่มsave</h5>
-      <h5>4.จะปรากฎหน้า Scoresheet ให้นักกีฬาถ่ายรูป และรอจนมุมบนด้านขวาจุดสีส้มหายไป ข้อความคะแนนจะส่งเข้าไลน์</h5> 
-      <br>
-      <h5>กรณีที่นักกีฬา DQ แล้ว ใน Stage ถัดไป จะไม่สามารถกรอกคะแนนได้</h5> 
-      <h5>กรณีที่นักกีฬาได้ warning ใน Stage ถัดไป จะแสดง warning เช่น finger หรือ muzzle และหากนักกีฬาได้ warning อีกครั้ง สามารถกรอก DQ เพื่อเปลี่ยน Status นักกีฬาในระบบได้ Stage ถัดไปก็จะไม่สามารถกรอกคะแนนได้</h5>
-</div>
+  
 </div>
 <br>
       <center>
-    <iframe src="https://www.appsheet.com/start/d7cd28ee-e939-4dc1-ad79-4dcc4e860a4d" style="border:none;" width="320" height="620"/>
+   <iframe src="https://www.appsheet.com/start/d7cd28ee-e939-4dc1-ad79-4dcc4e860a4d" style="border:none;" width="320" height="620"/>
         </center>
     </section>
     </body>
 </html>
+
