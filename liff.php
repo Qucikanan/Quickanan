@@ -29,7 +29,7 @@
     "contents": [
       {
         "type": "image",
-        "url": "https://www.img.in.th/images/d1ac5064c21cb76af3bfda9207379a69.th.png",
+        "url": "https://www.img.in.th/images/d6b123c0add023c77e52cf1385baf03e.th.png",
         "size": "full",
         "align": "center",
         "flex": 5
@@ -116,7 +116,7 @@
         "url": "https://www.img.in.th/images/8d7a71c4f18561cf7c36b1c16a971fd4.png",
         "size": "xl",
         "margin": "none",
-        "offsetBottom": "80%",
+        "offsetBottom": "50%",
         "offsetStart": "8%"
       },
       {
@@ -126,11 +126,11 @@
         "size": "xs",
         "align": "start",
         "style": "normal",
-        "offsetBottom": "100%",
+        "offsetBottom": "70%",
         "offsetStart": "7%"
       }
     ],
-    "height": "30px"
+    "height": "40px"
   }
 }
 
