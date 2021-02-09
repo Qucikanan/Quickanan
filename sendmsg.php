@@ -23,7 +23,7 @@
           "contents":{
   "type": "carousel",
   "contents": [
-    {
+   {
   "type": "carousel",
   "contents": [
     {
@@ -192,6 +192,7 @@
 }
 
 
+
         }
       ])
        .then(() => {
@@ -236,3 +237,4 @@
   </script>
 </body>
 </html>
+
