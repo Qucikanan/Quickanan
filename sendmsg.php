@@ -167,7 +167,7 @@
               },
               {
                 "type": "image",
-                "url": "https://www.flaticon.com/svg/vstatic/svg/929/929468.svg?token=exp=1612865881~hmac=461545999e117d4e621d446c5da09162",
+                "url": "https://www.img.in.th/images/ff9bcd3ff098d92ca2344c483fa930c6.png",
                 "size": "xxs",
                 "margin": "md",
                 "align": "end"
