@@ -24,6 +24,9 @@
   "type": "carousel",
   "contents": [
     {
+  "type": "carousel",
+  "contents": [
+    {
       "type": "bubble",
       "body": {
         "type": "box",
@@ -34,7 +37,8 @@
             "url": "https://www.img.in.th/images/116605ddc17a0b47fab66bd9a02ae0eb.png",
             "gravity": "top",
             "size": "full",
-            "aspectMode": "cover"
+            "aspectMode": "cover",
+            "aspectRatio": "1:1"
           }
         ],
         "paddingAll": "0px"
@@ -51,18 +55,20 @@
             "text": "333 IDPA 1/2021",
             "size": "xl",
             "align": "center",
-            "margin": "md",
+            "margin": "lg",
             "color": "#ffffff",
-            "offsetTop": "5%"
+            "offsetTop": "5%",
+            "weight": "bold"
           },
           {
             "type": "text",
             "text": " #The Killer",
             "size": "4xl",
             "align": "center",
-            "margin": "lg",
+            "margin": "md",
             "color": "#ffffff",
-            "offsetTop": "6%"
+            "offsetTop": "6%",
+            "weight": "bold"
           },
           {
             "type": "text",
@@ -70,7 +76,8 @@
             "margin": "xxl",
             "size": "lg",
             "align": "center",
-            "color": "#ffffff"
+            "color": "#ffffff",
+            "weight": "bold"
           },
           {
             "type": "box",
@@ -109,7 +116,8 @@
             "type": "image",
             "url": "https://www.img.in.th/images/116605ddc17a0b47fab66bd9a02ae0eb.png",
             "align": "center",
-            "size": "3xl"
+            "size": "3xl",
+            "flex": 5
           },
           {
             "type": "box",
@@ -120,32 +128,64 @@
                 "text": "<<รายละเอียด>>",
                 "color": "#ffffff",
                 "align": "center",
-                "size": "lg"
+                "size": "lg",
+                "action": {
+                  "type": "uri",
+                  "label": "action",
+                  "uri": "https://quickanan.herokuapp.com/event1.php"
+                }
               }
             ]
           },
           {
             "type": "box",
-            "layout": "vertical",
+            "layout": "horizontal",
             "contents": [
               {
-                "type": "text",
-                "text": "ลงทะเบียน",
-                "color": "#404040",
-                "align": "center",
-                "size": "xl",
-                "margin": "sm",
-                "weight": "bold"
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "ลงทะเบียน",
+                    "align": "center",
+                    "weight": "bold",
+                    "size": "lg",
+                    "margin": "sm",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://line.me/ti/p/0CJB3-AoAu"
+                    }
+                  }
+                ],
+                "spacing": "none",
+                "margin": "none",
+                "width": "220px",
+                "height": "35px",
+                "backgroundColor": "#ffffff",
+                "cornerRadius": "55px"
+              },
+              {
+                "type": "image",
+                "url": "https://www.flaticon.com/svg/vstatic/svg/929/929468.svg?token=exp=1612865881~hmac=461545999e117d4e621d446c5da09162",
+                "size": "xxs",
+                "margin": "md",
+                "align": "end"
               }
             ],
-            "backgroundColor": "#ffffff",
-            "cornerRadius": "55px",
-            "height": "40px",
             "alignItems": "center",
-            "margin": "xl"
+            "margin": "md",
+            "cornerRadius": "10px"
           }
         ],
-        "backgroundColor": "#404040"
+        "backgroundColor": "#404040",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "http://linecorp.com/"
+        },
+        "alignItems": "center"
       }
     }
   ]
