@@ -187,7 +187,7 @@
         "action": {
           "type": "uri",
           "label": "action",
-          "uri": "http://linecorp.com/"
+          "uri": "https://quickanan.herokuapp.com/event1.php"
         },
         "alignItems": "center"
       }
