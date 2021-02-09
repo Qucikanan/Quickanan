@@ -20,7 +20,9 @@
            {
           "type": "flex",
           "altText": "Flex Message",
-          "contents":{
+          "contents":
+             
+             {
   "type": "carousel",
   "contents": [
     {
@@ -31,44 +33,11 @@
         "contents": [
           {
             "type": "image",
-            "url": "https://www.img.in.th/images/f377c5a4ed9ff9be35b12aa175cbc56a.th.png",
+            "url": "https://www.img.in.th/images/116605ddc17a0b47fab66bd9a02ae0eb.png",
             "gravity": "top",
             "size": "full",
-            "aspectMode": "cover"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://www.img.in.th/images/f446d30b4b3d4add36569bf46c6e6efc.th.png",
-            "gravity": "top",
-            "size": "full",
-            "aspectMode": "cover"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://www.img.in.th/images/88f531c381caec0f9a4fd217a9f2d6e5.th.png",
-            "gravity": "top",
             "aspectMode": "cover",
-            "size": "full"
+            "aspectRatio": "1:1"
           }
         ],
         "paddingAll": "0px"
@@ -80,25 +49,142 @@
         "type": "box",
         "layout": "vertical",
         "contents": [
+          {
+            "type": "text",
+            "text": "333 IDPA 1/2021",
+            "size": "xl",
+            "align": "center",
+            "margin": "lg",
+            "color": "#ffffff",
+            "offsetTop": "5%",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": " #The Killer",
+            "size": "4xl",
+            "align": "center",
+            "margin": "md",
+            "color": "#ffffff",
+            "offsetTop": "6%",
+            "weight": "bold"
+          },
+          {
+            "type": "text",
+            "text": "21 March 2021",
+            "margin": "xxl",
+            "size": "lg",
+            "align": "center",
+            "color": "#ffffff",
+            "weight": "bold"
+          },
+          {
+            "type": "box",
+            "layout": "baseline",
+            "contents": [
+              {
+                "type": "icon",
+                "url": "https://cdn.icon-icons.com/icons2/1559/PNG/512/3440906-direction-location-map-marker-navigation-pin_107531.png",
+                "size": "3xl",
+                "offsetTop": "30%",
+                "margin": "xs"
+              },
+              {
+                "type": "text",
+                "text": "333 Shooting range Rangsit, Pathumthani",
+                "wrap": true,
+                "margin": "md",
+                "size": "md",
+                "align": "start",
+                "color": "#ffffff"
+              }
+            ],
+            "margin": "xs"
+          }
+        ],
+        "backgroundColor": "#404040"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://www.img.in.th/images/116605ddc17a0b47fab66bd9a02ae0eb.png",
+            "align": "center",
+            "size": "3xl",
+            "flex": 5
+          },
           {
             "type": "box",
             "layout": "vertical",
             "contents": [
               {
-                "type": "image",
-                "url": "https://www.img.in.th/images/1b26ed15d72b33911301e16381441175.th.png",
-                "size": "full",
+                "type": "text",
+                "text": "<<รายละเอียด>>",
+                "color": "#ffffff",
+                "align": "center",
+                "size": "lg",
                 "action": {
                   "type": "uri",
                   "label": "action",
-                  "uri": "https://line.me/ti/p/0CJB3-AoAu"
+                  "uri": "https://quickanan.herokuapp.com/event1.php"
                 }
               }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "ลงทะเบียน",
+                    "align": "center",
+                    "weight": "bold",
+                    "size": "lg",
+                    "margin": "sm",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "https://line.me/ti/p/0CJB3-AoAu"
+                    }
+                  }
+                ],
+                "spacing": "none",
+                "margin": "none",
+                "width": "220px",
+                "height": "35px",
+                "backgroundColor": "#ffffff",
+                "cornerRadius": "55px"
+              },
+              {
+                "type": "image",
+                "url": "https://www.flaticon.com/svg/vstatic/svg/929/929468.svg?token=exp=1612865881~hmac=461545999e117d4e621d446c5da09162",
+                "size": "xxs",
+                "margin": "md",
+                "align": "end"
+              }
             ],
-            "offsetTop": "0px"
+            "alignItems": "center",
+            "margin": "md",
+            "cornerRadius": "10px"
           }
         ],
-        "paddingAll": "0px"
+        "backgroundColor": "#404040",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "http://linecorp.com/"
+        },
+        "alignItems": "center"
       }
     }
   ]
