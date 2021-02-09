@@ -21,89 +21,118 @@
           "type": "flex",
           "altText": "Flex Message",
           "contents":{
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "body": {
+  "type": "bubble",
+  "size": "giga",
+  "body": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://www.img.in.th/images/d1ac5064c21cb76af3bfda9207379a69.th.png",
+        "size": "full",
+        "align": "center",
+        "flex": 5
+      },
+      {
         "type": "box",
         "layout": "vertical",
         "contents": [
           {
-            "type": "image",
-            "url": "https://www.img.in.th/images/f377c5a4ed9ff9be35b12aa175cbc56a.th.png",
-            "gravity": "top",
-            "size": "full",
-            "aspectMode": "cover"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
+            "type": "text",
+            "text": "333 IDPA 1/2021 # The Killer",
+            "color": "#ffffff",
+            "size": "xl",
+            "weight": "bold",
+            "style": "normal",
+            "align": "center",
+            "offsetTop": "10%"
+          },
           {
-            "type": "image",
-            "url": "https://www.img.in.th/images/f446d30b4b3d4add36569bf46c6e6efc.th.png",
-            "gravity": "top",
-            "size": "full",
-            "aspectMode": "cover"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://www.img.in.th/images/88f531c381caec0f9a4fd217a9f2d6e5.th.png",
-            "gravity": "top",
-            "aspectMode": "cover",
-            "size": "full"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
+            "type": "text",
+            "text": "21 March 2021",
+            "color": "#ffffff",
+            "align": "center",
+            "weight": "bold",
+            "style": "normal",
+            "offsetTop": "10%"
+          },
           {
             "type": "box",
             "layout": "vertical",
             "contents": [
               {
-                "type": "image",
-                "url": "https://www.img.in.th/images/1b26ed15d72b33911301e16381441175.th.png",
-                "size": "full",
+                "type": "button",
                 "action": {
                   "type": "uri",
-                  "label": "action",
-                  "uri": "https://line.me/ti/p/0CJB3-AoAu"
-                }
+                  "label": "<<รายละเอียด>>",
+                  "uri": "https://quickanan.herokuapp.com/event1.php"
+                },
+                "color": "#ffffff"
               }
             ],
-            "offsetTop": "0px"
+            "backgroundColor": "#404040",
+            "cornerRadius": "10px",
+            "height": "20%",
+            "justifyContent": "center",
+            "margin": "lg",
+            "alignItems": "center",
+            "offsetTop": "10%"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "ลงทะเบียน",
+                  "uri": "https://line.me/ti/p/0CJB3-AoAu"
+                },
+                "color": "#404040"
+              }
+            ],
+            "backgroundColor": "#ffffff",
+            "cornerRadius": "10px",
+            "height": "20%",
+            "justifyContent": "center",
+            "margin": "lg",
+            "alignItems": "center",
+            "offsetTop": "10%"
           }
         ],
-        "paddingAll": "0px"
+        "flex": 5
       }
-    }
-  ]
+    ],
+    "backgroundColor": "#404040"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "baseline",
+    "contents": [
+      {
+        "type": "icon",
+        "url": "https://www.img.in.th/images/8d7a71c4f18561cf7c36b1c16a971fd4.png",
+        "size": "xl",
+        "margin": "none",
+        "offsetBottom": "80%",
+        "offsetStart": "8%"
+      },
+      {
+        "type": "text",
+        "text": "333 Shooting Range Rangsit, Pathumthani",
+        "margin": "xl",
+        "size": "xs",
+        "align": "start",
+        "style": "normal",
+        "offsetBottom": "100%",
+        "offsetStart": "7%"
+      }
+    ],
+    "height": "30px"
+  }
 }
-
 
 
         }
