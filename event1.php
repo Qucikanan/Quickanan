@@ -72,16 +72,19 @@ body {
       <h6 class="lead">ขอเชิญนักกีฬาทุกท่านเข้าร่วมการแข่งขันยิงปืน IDPA ในงาน
       <br>“333 IDPA 1/2021 # The Killer"”
       <br>ชิงถ้วยรางวัลจาก
-      <br>"พลเอกสมชาย ธนะรัชต์"
+      <br>" "
       <br>ในวันอาทิตย์ที่ 21 มีนาคม 2564
       <br>ณ สนามยิงปืน 333 รังสิต อ.คลองหลวง จ.ปทุมธานี
       <br>จำนวน 10 สเตจ ใช้กระสุนอย่างน้อย 170 นัด
       <br><br>เปิดรับลงทะเบียนนักกีฬาล่วงหน้า วันนี้ – 17 มีนาคม 2564
 
-      <br><br>สมัครด้วยตนเอง https://practiscore.com/333-shooting-range-rangsit-2021/register
+      <br><br>สมัครด้วยตนเอง 
+      <a href = "https://practiscore.com/333-shooting-range-rangsit-2021/register" class="btn btn-primary">Practiscore</a>
+      https://practiscore.com/333-shooting-range-rangsit-2021/register
 
       <br><br>สมัครผ่านคุณเก๋
-      <br>http://line.me/ti/p/0CJB3-AoAu
+      <a href = "https://line.me/ti/p/0CJB3-AoAu" class="btn btn-success"> แอดไลน์ K.เก๋</a>
+      http://line.me/ti/p/0CJB3-AoAu
 
       <br><br>สอบถามรายละเอียดเพิ่มเติม ได้ที่
       <br>คุณเก๋ 089 2017865
@@ -134,7 +137,7 @@ body {
 
 
       <br>
-      <a href = "https://line.me/ti/p/0CJB3-AoAu" class="btn btn-primary">ลงทะเบียน K.เก๋</a>
+      
       
        </div>
   </main>
