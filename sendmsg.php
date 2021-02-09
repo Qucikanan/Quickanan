@@ -92,7 +92,7 @@
               },
               {
                 "type": "text",
-                "text": "333 Shooting rang Rangsit, Pathumthani",
+                "text": "333 Shooting range Rangsit, Pathumthani",
                 "wrap": true,
                 "margin": "md",
                 "size": "md",
