@@ -17,10 +17,7 @@
   <script>
     async function sendShare() {
       const result = await liff.sendMessages([
-       {
-  "type": "carousel",
-  "contents": [
-    {
+        {
   "type": "carousel",
   "contents": [
     {
@@ -103,9 +100,9 @@
     }
   ]
 }
-    }
-    
-    
+
+
+        }
       ])
        .then(() => {
     console.log('message sent');
@@ -138,7 +135,7 @@
       await liff.init({ liffId: "1655647861-oWn4v2RN" })
       if (liff.isLoggedIn()) {
         document.getElementById("btnShare").style.display = "block"
-        if (!liff.isInClient()) {
+      if (!liff.isInClient()) {
           document.getElementById("btnLogOut").style.display = "block"
         }
       } else {
@@ -149,3 +146,5 @@
   </script>
 </body>
 </html>
+
+
