@@ -17,7 +17,10 @@
   <script>
     async function sendShare() {
       const result = await liff.sendMessages([
-        {
+           {
+          "type": "flex",
+          "altText": "Flex Message",
+          "contents":{
   "type": "carousel",
   "contents": [
     {
@@ -100,6 +103,7 @@
     }
   ]
 }
+
 
 
         }
