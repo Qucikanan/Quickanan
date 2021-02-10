@@ -63,14 +63,15 @@ body {
   <div class="container">
     <div class="jumbotron">
       <h1 class="display-4">333 IDPA 1/2021 #The Killer  </h1> 
-      <h6 class="lead">จัดงานโดย Tingly Army Club #CL100264 </h6>
+      <h3 class="lead"> ชิงถ้วยรางวัล พลเอกสมชาย ธนะรัชต์  </h3>
       <hr class="my-4">
+      <h6 class="lead">จัดงานโดย Tingly Army Club #CL100264 </h6>
       
 </div>
 <div>
       <h4 class="lead">รายละเอียดการแข่งขัน</h4>
       <h6 class="lead">ขอเชิญนักกีฬาทุกท่านเข้าร่วมการแข่งขันยิงปืน IDPA ในงาน
-      <br>“333 IDPA 1/2021 # The Killer"”
+      <br>“333 IDPA 1/2021 # The Killer”
       <br>ชิงถ้วยรางวัลจาก
       <br>"พลเอกสมชาย ธนะรัชต์"
       <br>ในวันอาทิตย์ที่ 21 มีนาคม 2564
