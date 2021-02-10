@@ -24,5 +24,13 @@ body {
     <iframe src="https://www.appsheet.com/start/251dee35-df82-41b8-8545-273e033334e3" style="border:none;" width="320" height="650"/>
         </center>
     </section>
+    async function main() {
+     await liff.init({ liffId: "1655659522-8DD3AL3n" })
+       if (liff.isLoggedIn()) {
+         getUserProfile()
+       } else {
+         liff.login()
+       }
+   }
     </body>
 </html>
