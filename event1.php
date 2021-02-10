@@ -132,7 +132,8 @@ body {
 
       <br><br>More Information
       <br>ติดตามข่าวสารของ Match [ระบบตอบกลับอัตโนมัติ]
-      <br>ได้ที่ Line official account
+      <br>ได้ที่ Line official account 
+        <a href = "https://lin.ee/3PZvTwW" class="btn btn-success"> เพิ่มเพื่อน </a>
       <br>@737oyoay หรือ https://lin.ee/3PZvTwW
 </div>
 
