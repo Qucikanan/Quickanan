@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Tingly Army club</title>
+  <title>Shooter #The Killer</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -21,7 +21,7 @@ body {
 </div>
 <br>
       <center>
-    <iframe width="650" height="1300" src="https://datastudio.google.com/u/0/reporting/101c6109-ac7e-4806-ab64-0364f0434ead/page/AlNlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe width="650" height="1300" src="https://datastudio.google.com/embed/reporting/63559ab3-0c6c-468e-bf76-189a19cc3373/page/mkNlB" frameborder="0" style="border:0" allowfullscreen></iframe>
         </center>
     </section>
     </body>
