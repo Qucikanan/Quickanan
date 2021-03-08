@@ -1,18 +1,26 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <title>My LIFF App</title>
-  <style>
-    body { padding: 256px }
-    button { display: none; width: 50%; padding: 16px 0; margin: 16px auto }
-  </style>
-</head>
-<body>
-  <button id="btnShare" onclick="sendShare()">Share Target Picker</button>
-  <button id="btnLogin" onclick="liff.login()">Log In</button>
-  <button id="btnLogOut" onclick="logOut()">Log Out</button>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+   <script src="https://static.line-scdn.net/liff/edge/versions/2.7.0/sdk.js"></script> 
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+  <button id="btnShare"  class="btn btn-primary" onclick="sendShare()">Share Target Picker</button>
+  <button id="btnLogin" class="btn btn-primary" onclick="liff.login()">Log In</button>
+  <button id="btnLogOut" class="btn btn-primary" onclick="logOut()">Log Out</button>
   <script src="https://static.line-scdn.net/liff/edge/versions/2.7.1/sdk.js"></script>
   <script>
     async function sendShare() {
