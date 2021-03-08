@@ -17,186 +17,23 @@
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([
-       {
-          "type": "flex",
-          "altText": "Flex Message",
-          "contents":
-         
         {
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://www.img.in.th/images/116605ddc17a0b47fab66bd9a02ae0eb.png",
-            "gravity": "top",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "1:1"
+    "template": {
+      "columns": [
+        {
+          "imageUrl": "https://media.giphy.com/media/KbvZsN07K9Hy9ZoyR7/giphy.gif",
+          "action": {
+            "type": "uri",
+            "label": "Open App",
+            "uri": "https://liff.line.me/1655659522-8DD3AL3n"
           }
-        ],
-        "paddingAll": "0px"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "333 IDPA 1/2021",
-            "size": "xl",
-            "align": "center",
-            "margin": "lg",
-            "color": "#ffffff",
-            "offsetTop": "5%",
-            "weight": "bold"
-          },
-          {
-            "type": "text",
-            "text": " #The Killer",
-            "size": "4xl",
-            "align": "center",
-            "margin": "md",
-            "color": "#ffffff",
-            "offsetTop": "6%",
-            "weight": "bold"
-          },
-          {
-            "type": "text",
-            "text": "21 March 2021",
-            "margin": "xxl",
-            "size": "lg",
-            "align": "center",
-            "color": "#ffffff",
-            "weight": "bold"
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "contents": [
-              {
-                "type": "icon",
-                "url": "https://cdn.icon-icons.com/icons2/1559/PNG/512/3440906-direction-location-map-marker-navigation-pin_107531.png",
-                "size": "3xl",
-                "offsetTop": "30%",
-                "margin": "xs"
-              },
-              {
-                "type": "text",
-                "text": "333 Shooting range Rangsit, Pathumthani",
-                "wrap": true,
-                "margin": "md",
-                "size": "md",
-                "align": "start",
-                "color": "#ffffff"
-              }
-            ],
-            "margin": "xs"
-          }
-        ],
-        "backgroundColor": "#404040"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://www.img.in.th/images/116605ddc17a0b47fab66bd9a02ae0eb.png",
-            "align": "center",
-            "size": "3xl",
-            "flex": 5
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "<<รายละเอียด>>",
-                "color": "#ffffff",
-                "align": "center",
-                "size": "lg",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "https://quickanan.herokuapp.com/event1.php"
-                }
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "ลงทะเบียน",
-                    "align": "center",
-                    "weight": "bold",
-                    "size": "lg",
-                    "margin": "sm",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://line.me/ti/p/0CJB3-AoAu"
-                    }
-                  }
-                ],
-                "spacing": "none",
-                "margin": "none",
-                "width": "220px",
-                "height": "35px",
-                "backgroundColor": "#ffffff",
-                "cornerRadius": "55px"
-              },
-              {
-                "type": "image",
-                "url": "https://www.img.in.th/images/ff9bcd3ff098d92ca2344c483fa930c6.png",
-                "size": "xxs",
-                "margin": "md",
-                "align": "end",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "https://liff.line.me/1655653820-LEzAy2pe"
-                }
-              }
-            ],
-            "alignItems": "center",
-            "margin": "md",
-            "cornerRadius": "10px"
-          }
-        ],
-        "backgroundColor": "#404040",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://quickanan.herokuapp.com/event1.php"
-        },
-        "alignItems": "center"
-      }
-    }
-  ]
-}
-
-
         }
+      ],
+      "type": "image_carousel"
+    },
+    "altText": "this is an image carousel template",
+    "type": "template"
+  }
       ])
        
       
