@@ -18,9 +18,11 @@
     <script src="/script.js" defer></script>
   </head>  
   <body>
-  <button id="btnShare"  class="btn btn-primary" onclick="sendShare()">Share Target Picker</button>
-  <button id="btnLogin" class="btn btn-primary" onclick="liff.login()">Log In</button>
-  <button id="btnLogOut" class="btn btn-primary" onclick="logOut()">Log Out</button>
+    <div class="container">
+ <button id="btnShare"  class="btn btn-primary" onclick="sendShare()">Share Target Picker</button>
+  <button id="btnLogin" class="btn btn-success" onclick="liff.login()">Log In</button>
+  <button id="btnLogOut" class="btn btn-warning" onclick="logOut()">Log Out</button>
+    </div>
   <script src="https://static.line-scdn.net/liff/edge/versions/2.7.1/sdk.js"></script>
   <script>
     async function sendShare() {
