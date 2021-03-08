@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title></title>
+  <title>Tingly Army Club</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -21,7 +21,7 @@ body {
 </div>
 <br>
       <center>
-    <iframe width="650" height="1300" src="https://datastudio.google.com/u/0/reporting/0511f221-50f7-4e97-98b5-55fb55935899/page/IlNlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe width="600" height="1300" src="https://datastudio.google.com/embed/reporting/bfb70111-aa4d-472d-b53e-6f848d6679f8/page/IlNlB" frameborder="0" style="border:0" allowfullscreen></iframe>
         </center>
     </section>
     </body>
