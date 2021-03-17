@@ -40,7 +40,7 @@
     "contents": [
       {
         "type": "image",
-        "url": "https://media.giphy.com/media/vdFopmeIXVzwSLQw7z/giphy.gif",
+        "url": "https://dl.dropbox.com/s/7fhw5dhe6o9hmss/2222.jpg",
         "size": "full",
         "aspectMode": "cover",
         "aspectRatio": "1:1",
@@ -148,7 +148,8 @@
                           "type": "uri",
                           "label": "action",
                           "uri": "https://line.me/ti/p/0CJB3-AoAu"
-                        }
+                        },
+                        "wrap": true
                       },
                       {
                         "type": "icon",
@@ -169,15 +170,15 @@
                 "alignItems": "center"
               }
             ],
-            "spacing": "xs"
+            "spacing": "xs",
+            "backgroundColor": "#03303Acc"
           }
         ],
         "position": "absolute",
         "offsetBottom": "0px",
         "offsetStart": "0px",
         "offsetEnd": "0px",
-        "paddingAll": "20px",
-        "backgroundColor": "#03303Acc"
+        "paddingAll": "20px"
       },
       {
         "type": "box",
@@ -205,6 +206,7 @@
   }
 }
 
+             
         }
       ])
        .then(() => {
