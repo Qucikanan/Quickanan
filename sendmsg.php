@@ -143,6 +143,7 @@
                       {
                         "type": "text",
                         "text": "ติดขัดอะไรแจ้งได้ที่ คุณเก๋",
+                        "gravity": "center",
                         "color": "#ffffff",
                         "action": {
                           "type": "uri",
