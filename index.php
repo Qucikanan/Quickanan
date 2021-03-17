@@ -66,20 +66,8 @@ body {
       <hr class="my-4">
       <h6 class="lead">ลงทะเบียนเปิดการอัพเดทอัตโนมัติ นักกีฬาจะได้รับข้อความแจ้งเตือนจาก Line ทุกครั้งที่มีรายการอัพเดทคะแนนของคุณ</h6>
       <br>
-      <h2>เริ่มต้นใช้งาน</h2>
-      <h5>1.กดเพิ่มเพื่อนด้านล่าง  Register รับข้อความแจ้งเตือน [จำหมายเลขนักกีฬาที่กรอกในแบบฟอร์มไว้]</h5>
-      <h5>2.กลับมาที่ระบบลงคะแนนด้านล่าง กดเมนูด้านล่าง บันทึกคะแนนStage 1 ใส่หมายเลขนักกีฬาตาม 1. 
-          ใส่คะแนนให้เรียบร้อย กด Save รอจนมุมบนขวา จุดสีส้มหายไป</h5>
-      <h5>3.ข้อความจะเเจ้งเตือนใน line QuicKanan</h5> 
-      <a href="https://lin.ee/6XPDCBE"><img height="50" border="0" class="center-block" src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png"></a>
-      <br>
-      <hr class="my-4">
-      <h2 class="lead" align = "center"  > ทดลองลงคะแนนของคุณ </h2>
-      <br>
-      <center>
-    <iframe src="https://www.appsheet.com/start/da9f8b4d-6e20-47aa-a9f8-de67db3042da?refresh=1&wipe=1" style="border:none;" width="320" height="568"/>
-        </center>
-    </section>
+      <a href="https://lin.ee/3PZvTwW"><img height="50" border="0" class="center-block" src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png"></a>
+      
   
 
     
