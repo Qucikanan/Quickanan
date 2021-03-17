@@ -21,7 +21,7 @@ body {
 </div>
 <br>
       <center>
-   <iframe width="100%" height="900" src="https://datastudio.google.com/embed/reporting/4896ab9d-1d71-4b6d-9fd9-e1b242e0b460/page/TlNlB" frameborder="0" style="border:0" allowfullscreen></iframe>
+   <iframe width="100%" height="700px" src="https://datastudio.google.com/embed/reporting/4896ab9d-1d71-4b6d-9fd9-e1b242e0b460/page/TlNlB" frameborder="0" style="border:0" allowfullscreen></iframe>
         </center>
     </section>
     </body>
