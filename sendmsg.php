@@ -1,18 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <title>My LIFF App</title>
-  <style>
-    body { padding: 256px }
-    button { display: none; width: 50%; padding: 16px 0; margin: 16px auto }
-  </style>
-</head>
-<body>
-  <button id="btnShare" onclick="sendShare()">Share Target Picker</button>
-  <button id="btnLogin" onclick="liff.login()">Log In</button>
-  <button id="btnLogOut" onclick="logOut()">Log Out</button>
+  
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+   <script src="https://static.line-scdn.net/liff/edge/versions/2.7.0/sdk.js"></script> 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div class="container">
+ <button id="btnShare"  class="btn btn-primary" onclick="sendShare()">send msg</button>
+  <button id="btnLogin" class="btn btn-success" onclick="liff.login()">Log In</button>
+  <button id="btnLogOut" class="btn btn-warning" onclick="logOut()">Log Out</button>
+    </div>
   <script src="https://static.line-scdn.net/liff/edge/versions/2.7.1/sdk.js"></script>
   <script>
     async function sendShare() {
@@ -23,122 +32,45 @@
           "contents":
              
              {
-  "type": "carousel",
-  "contents": [
-    {
-      "type": "bubble",
-      "body": {
+  "type": "bubble",
+  "size": "giga",
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://media.giphy.com/media/vdFopmeIXVzwSLQw7z/giphy.gif",
+        "size": "full",
+        "aspectMode": "cover",
+        "aspectRatio": "1:1",
+        "gravity": "center",
+        "animated": true
+      },
+      {
         "type": "box",
         "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://www.img.in.th/images/116605ddc17a0b47fab66bd9a02ae0eb.png",
-            "gravity": "top",
-            "size": "full",
-            "aspectMode": "cover",
-            "aspectRatio": "1:1"
-          }
-        ],
-        "paddingAll": "0px"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
+        "contents": [],
+        "position": "absolute",
+        "background": {
+          "type": "linearGradient",
+          "angle": "0deg",
+          "endColor": "#00000000",
+          "startColor": "#00000099"
+        },
+        "width": "100%",
+        "height": "40%",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px"
+      },
+      {
         "type": "box",
-        "layout": "vertical",
+        "layout": "horizontal",
         "contents": [
-          {
-            "type": "text",
-            "text": "333 IDPA 1/2021",
-            "size": "xl",
-            "align": "center",
-            "margin": "lg",
-            "color": "#ffffff",
-            "offsetTop": "5%",
-            "weight": "bold"
-          },
-          {
-            "type": "text",
-            "text": " #The Killer",
-            "size": "4xl",
-            "align": "center",
-            "margin": "md",
-            "color": "#ffffff",
-            "offsetTop": "6%",
-            "weight": "bold"
-          },
-          {
-            "type": "text",
-            "text": "21 March 2021",
-            "margin": "xxl",
-            "size": "lg",
-            "align": "center",
-            "color": "#ffffff",
-            "weight": "bold"
-          },
-          {
-            "type": "box",
-            "layout": "baseline",
-            "contents": [
-              {
-                "type": "icon",
-                "url": "https://cdn.icon-icons.com/icons2/1559/PNG/512/3440906-direction-location-map-marker-navigation-pin_107531.png",
-                "size": "3xl",
-                "offsetTop": "30%",
-                "margin": "xs"
-              },
-              {
-                "type": "text",
-                "text": "333 Shooting range Rangsit, Pathumthani",
-                "wrap": true,
-                "margin": "md",
-                "size": "md",
-                "align": "start",
-                "color": "#ffffff"
-              }
-            ],
-            "margin": "xs"
-          }
-        ],
-        "backgroundColor": "#404040"
-      }
-    },
-    {
-      "type": "bubble",
-      "body": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "image",
-            "url": "https://www.img.in.th/images/116605ddc17a0b47fab66bd9a02ae0eb.png",
-            "align": "center",
-            "size": "3xl",
-            "flex": 5
-          },
           {
             "type": "box",
             "layout": "vertical",
-            "contents": [
-              {
-                "type": "text",
-                "text": "<<รายละเอียด>>",
-                "color": "#ffffff",
-                "align": "center",
-                "size": "lg",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "https://quickanan.herokuapp.com/event1.php"
-                }
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "horizontal",
             "contents": [
               {
                 "type": "box",
@@ -146,53 +78,131 @@
                 "contents": [
                   {
                     "type": "text",
-                    "text": "ลงทะเบียน",
-                    "align": "center",
-                    "weight": "bold",
+                    "text": "333 IDPA 1/2021 #The Killer",
+                    "color": "#ffffff",
                     "size": "lg",
-                    "margin": "sm",
-                    "action": {
-                      "type": "uri",
-                      "label": "action",
-                      "uri": "https://line.me/ti/p/0CJB3-AoAu"
-                    }
+                    "weight": "bold",
+                    "gravity": "center",
+                    "wrap": true,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "ลงทะเบียนและชำระเงิน",
+                    "size": "lg",
+                    "color": "#ffffff",
+                    "wrap": true,
+                    "align": "center",
+                    "gravity": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "วันนี้วันสุดท้าย",
+                    "size": "lg",
+                    "color": "#ffffff",
+                    "wrap": true,
+                    "align": "center",
+                    "gravity": "center"
                   }
-                ],
-                "spacing": "none",
-                "margin": "none",
-                "width": "220px",
-                "height": "35px",
-                "backgroundColor": "#ffffff",
-                "cornerRadius": "55px"
+                ]
               },
               {
-                "type": "image",
-                "url": "https://www.img.in.th/images/ff9bcd3ff098d92ca2344c483fa930c6.png",
-                "size": "xxs",
-                "margin": "md",
-                "align": "end",
-                "action": {
-                  "type": "uri",
-                  "label": "action",
-                  "uri": "https://liff.line.me/1655653820-LEzAy2pe"
-                }
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                      {
+                        "type": "text",
+                        "text": "ลงทะเบียนหน้างาน 3,500 บาท",
+                        "color": "#ffffff",
+                        "gravity": "center",
+                        "align": "center",
+                        "wrap": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      },
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      },
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      },
+                      {
+                        "type": "text",
+                        "text": "ติดขัดอะไรแจ้งได้ที่ คุณเก๋ เลยครับ",
+                        "color": "#ffffff",
+                        "action": {
+                          "type": "uri",
+                          "label": "action",
+                          "uri": "https://line.me/ti/p/0CJB3-AoAu"
+                        }
+                      },
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      },
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      },
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
+                      }
+                    ]
+                  }
+                ],
+                "justifyContent": "center",
+                "alignItems": "center"
               }
             ],
-            "alignItems": "center",
-            "margin": "md",
-            "cornerRadius": "10px"
+            "spacing": "xs"
           }
         ],
-        "backgroundColor": "#404040",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://quickanan.herokuapp.com/event1.php"
-        },
-        "alignItems": "center"
+        "position": "absolute",
+        "offsetBottom": "0px",
+        "offsetStart": "0px",
+        "offsetEnd": "0px",
+        "paddingAll": "20px",
+        "backgroundColor": "#03303Acc"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "วันสุดท้าย",
+            "offsetTop": "3px",
+            "align": "center",
+            "color": "#ffffff",
+            "size": "xs"
+          }
+        ],
+        "position": "absolute",
+        "width": "80px",
+        "height": "25px",
+        "backgroundColor": "#ff334b",
+        "cornerRadius": "20px",
+        "offsetTop": "18px",
+        "offsetStart": "18px"
       }
-    }
-  ]
+    ],
+    "paddingAll": "0px"
+  }
 }
 
         }
