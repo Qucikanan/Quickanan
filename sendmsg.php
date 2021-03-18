@@ -44,8 +44,7 @@
         "size": "full",
         "aspectMode": "cover",
         "aspectRatio": "1:1",
-        "gravity": "center",
-        "animated": true
+        "gravity": "center"
       },
       {
         "type": "box",
@@ -79,96 +78,30 @@
                   {
                     "type": "text",
                     "text": "333 IDPA 1/2021 #The Killer",
+                    "size": "xl",
                     "color": "#ffffff",
-                    "size": "lg",
-                    "weight": "bold",
-                    "gravity": "center",
-                    "wrap": true,
-                    "align": "center"
+                    "align": "center",
+                    "margin": "xxl"
                   },
                   {
                     "type": "text",
-                    "text": "ลงทะเบียนและชำระเงิน",
-                    "size": "lg",
+                    "text": "ใบคุมปืน",
+                    "size": "3xl",
                     "color": "#ffffff",
-                    "wrap": true,
                     "align": "center",
-                    "gravity": "center"
+                    "margin": "none"
                   },
                   {
-                    "type": "text",
-                    "text": "วันนี้วันสุดท้าย",
-                    "size": "lg",
+                    "type": "button",
+                    "action": {
+                      "type": "uri",
+                      "label": "Download",
+                      "uri": "https://drive.google.com/file/d/144yW_y56u9vNcsqZSLAk7pEGVar-l5m3/view?usp=sharing"
+                    },
                     "color": "#ffffff",
-                    "wrap": true,
-                    "align": "center",
-                    "gravity": "center"
+                    "margin": "none"
                   }
                 ]
-              },
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                      {
-                        "type": "text",
-                        "text": "ลงทะเบียนหน้างาน 3,500 บาท",
-                        "color": "#ffffff",
-                        "gravity": "center",
-                        "align": "center",
-                        "wrap": true
-                      }
-                    ]
-                  },
-                  {
-                    "type": "box",
-                    "layout": "baseline",
-                    "contents": [
-                      {
-                        "type": "icon",
-                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                      },
-                      {
-                        "type": "icon",
-                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                      },
-                      {
-                        "type": "icon",
-                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                      },
-                      {
-                        "type": "text",
-                        "text": "ติดขัดอะไรแจ้งได้ที่ คุณเก๋",
-                        "gravity": "center",
-                        "color": "#ffffff",
-                        "action": {
-                          "type": "uri",
-                          "label": "action",
-                          "uri": "https://line.me/ti/p/0CJB3-AoAu"
-                        },
-                        "wrap": true
-                      },
-                      {
-                        "type": "icon",
-                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                      },
-                      {
-                        "type": "icon",
-                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                      },
-                      {
-                        "type": "icon",
-                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                      }
-                    ]
-                  }
-                ],
-                "justifyContent": "center",
-                "alignItems": "center"
               }
             ],
             "spacing": "xs",
@@ -180,30 +113,14 @@
         "offsetStart": "0px",
         "offsetEnd": "0px",
         "paddingAll": "20px"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "text",
-            "text": "วันสุดท้าย",
-            "offsetTop": "3px",
-            "align": "center",
-            "color": "#ffffff",
-            "size": "xs"
-          }
-        ],
-        "position": "absolute",
-        "width": "80px",
-        "height": "25px",
-        "backgroundColor": "#ff334b",
-        "cornerRadius": "20px",
-        "offsetTop": "18px",
-        "offsetStart": "18px"
       }
     ],
-    "paddingAll": "0px"
+    "paddingAll": "0px",
+    "action": {
+      "type": "uri",
+      "label": "action",
+      "uri": "https://drive.google.com/file/d/144yW_y56u9vNcsqZSLAk7pEGVar-l5m3/view?usp=sharing"
+    }
   }
 }
 
