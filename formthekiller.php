@@ -10,7 +10,7 @@
   async function getUserProfile() {
    const profile = await liff.getProfile()
    window.location.replace(
-    `https://docs.google.com/forms/d/e/1GzwDK4bPlfIYhoo15N0OnP9Ot8l6I-s0rm7-8vgYMIM/viewform?
+    `https://docs.google.com/forms/d/e/1FAIpQLSd3BYugV1kFbM4gcAG5Hi13uDwy2Pfb08FVq2nNQMhD2YW4SA/viewform?
     &entry.527791319=${profile.userId}`
      );
    
