@@ -11,8 +11,7 @@
    const profile = await liff.getProfile()
    window.location.replace(
     `https://docs.google.com/forms/d/e/1GzwDK4bPlfIYhoo15N0OnP9Ot8l6I-s0rm7-8vgYMIM/viewform?
-    &entry.42101711=${profile.userId}
-    &entry.1118901992=${profile.displayName}`
+    &entry.527791319=${profile.userId}`
      );
    
    }
