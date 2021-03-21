@@ -33,97 +33,38 @@
              
              {
   "type": "bubble",
-  "size": "giga",
-  "body": {
+  "hero": {
+    "type": "image",
+    "size": "full",
+    "aspectMode": "cover",
+    "url": "https://dl.dropbox.com/s/nbqnqawdg2tipt7/Card%20MS-99.png",
+    "action": {
+      "type": "uri",
+      "label": "Add line",
+      "uri": "https://lin.ee/3PZvTwW"
+    }
+  },
+  "footer": {
     "type": "box",
     "layout": "vertical",
     "contents": [
       {
-        "type": "image",
-        "url": "https://dl.dropbox.com/s/7fhw5dhe6o9hmss/2222.jpg",
-        "size": "full",
-        "aspectMode": "cover",
-        "aspectRatio": "1:1",
-        "gravity": "center"
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [],
-        "position": "absolute",
-        "background": {
-          "type": "linearGradient",
-          "angle": "0deg",
-          "endColor": "#00000000",
-          "startColor": "#00000099"
+        "type": "button",
+        "action": {
+          "type": "uri",
+          "label": "Add line",
+          "uri": "https://lin.ee/3PZvTwW"
         },
-        "width": "100%",
-        "height": "40%",
-        "offsetBottom": "0px",
-        "offsetStart": "0px",
-        "offsetEnd": "0px"
-      },
-      {
-        "type": "box",
-        "layout": "horizontal",
-        "contents": [
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "333 IDPA 1/2021 #The Killer",
-                    "size": "xl",
-                    "color": "#ffffff",
-                    "align": "center",
-                    "margin": "xxl"
-                  },
-                  {
-                    "type": "text",
-                    "text": "ใบคุมปืน",
-                    "size": "3xl",
-                    "color": "#ffffff",
-                    "align": "center",
-                    "margin": "none"
-                  },
-                  {
-                    "type": "button",
-                    "action": {
-                      "type": "uri",
-                      "label": "Download",
-                      "uri": "https://drive.google.com/file/d/144yW_y56u9vNcsqZSLAk7pEGVar-l5m3/view?usp=sharing"
-                    },
-                    "color": "#ffffff",
-                    "margin": "none"
-                  }
-                ]
-              }
-            ],
-            "spacing": "xs",
-            "backgroundColor": "#03303Acc"
-          }
-        ],
-        "position": "absolute",
-        "offsetBottom": "0px",
-        "offsetStart": "0px",
-        "offsetEnd": "0px",
-        "paddingAll": "20px"
+        "style": "primary"
       }
     ],
-    "paddingAll": "0px",
     "action": {
       "type": "uri",
-      "label": "action",
-      "uri": "https://drive.google.com/file/d/144yW_y56u9vNcsqZSLAk7pEGVar-l5m3/view?usp=sharing"
+      "label": "Add line",
+      "uri": "https://lin.ee/3PZvTwW"
     }
   }
 }
-
              
         }
       ])
