@@ -11,17 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
 </head>
   
-  
-<div class="container">
-  <h2>Go to page</h2>
-  <button type="button" class="btn btn-primary">Page 1</button>
-  <button type="button" class="btn btn-success">Page 2</button>
-  <button type="button" class="btn btn-info">Page 3</button>
-  <button type="button" class="btn btn-warning">Page 4</button>
-  <button type="button" class="btn btn-danger">Page 5</button>
-  <button type="button" class="btn btn-light">Page 6</button>
-  <button type="button" class="btn btn-link">Page 7</button>      
-</div>
+
    
   
   <style>
