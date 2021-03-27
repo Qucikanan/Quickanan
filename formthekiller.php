@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head><title>google_form_liff</title></head>
+<head>
+ <title>Tingly Army Club</title></head>
  
 <body>
  
