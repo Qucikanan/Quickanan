@@ -27,23 +27,101 @@
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([
+       {
+     "type": "flex",
+     "altText": "คณะทำงานพิจารณาปัญหาพิกัด",  // แก้ตรงนี้นะครับ
+     "contents": 
+        
         {
-    "template": {
-      "columns": [
-        {
-          "imageUrl": "https://media.giphy.com/media/KbvZsN07K9Hy9ZoyR7/giphy.gif",
-          "action": {
-            "type": "uri",
-            "label": "Open App",
-            "uri": "https://liff.line.me/1655659522-8DD3AL3n"
-          }
+  "type": "bubble",
+  "size": "mega",
+  "hero": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "image",
+        "url": "https://dl.dropbox.com/s/5j737c2oky7erbt/%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%A8%E0%B8%B8%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%81%E0%B8%A3.jpg",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://liff.line.me/1655653820-LEzAy2pe"
         }
-      ],
-      "type": "image_carousel"
-    },
-    "altText": "this is an image carousel template",
-    "type": "template"
+      },
+      {
+        "type": "image",
+        "size": "xxs",
+        "position": "absolute",
+        "offsetEnd": "5px",
+        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpQtK2H5CE4CP7yO_JLRSpgDn5aU3HD_hsPkFqmzrNLD7IZ9pqnrdyNmsbfODD5LQQwjk&usqp=CAU",
+        "action": {
+          "type": "uri",
+          "label": "action",
+          "uri": "https://liff.line.me/1655653820-LEzAy2pe"
+        }
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "เอกสารประกอบการประชุม",
+        "weight": "bold",
+        "size": "md",
+        "align": "center"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "คณะทำงานพิจารณาปัญหาพิกัดอัตราศุลกากรประจำสำนักงานศุลกากรกรุงเทพ",
+            "wrap": true,
+            "align": "center"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": []
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "primary",
+        "action": {
+          "type": "uri",
+          "label": "เอกสารแนบ 1",
+          "uri": "https://drive.google.com/file/d/1gHcywfH8W_Hhpe0DTgwQiSy9YBQI2ta9/view?usp=sharing"
+        },
+        "height": "sm"
+      },
+      {
+        "type": "button",
+        "style": "secondary",
+        "action": {
+          "type": "uri",
+          "label": "เอกสารแนบ 2",
+          "uri": "https://drive.google.com/file/d/1aEUsTMGP82D3k5x3MJ9RMYCQ9AwChYDi/view?usp=sharing"
+        },
+        "height": "sm"
+      }
+    ],
+    "flex": 0
   }
+}}
+        
       ])
        
       
