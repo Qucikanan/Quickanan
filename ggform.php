@@ -12,7 +12,8 @@
    window.location.replace(
     `https://docs.google.com/forms/d/e/1FAIpQLScghnVRh7WOkL_4R_1Q68CfWjGy4VibMNCEHJJhycWLLBfScQ/viewform?
     &entry.42101711=${profile.userId}
-    &entry.1118901992=${profile.displayName}`
+    &entry.1118901992=${profile.displayName}
+    &entry.1749755748=${profile.pictureUrl}`
      );
    
    }
