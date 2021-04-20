@@ -28,6 +28,14 @@
       src="https://static.line-scdn.net/liff/edge/2/sdk.js"
     ></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+  <style>
+body {
+  font-family: "Kanit", sans-serif;
+}
+</style>
+    
+        
   </head>
   
   <body>
@@ -35,41 +43,141 @@
       <form class="m-5" id="registform">
         <div class="row justify-content-center">
           <div class="col text-center">
-            <h1 class="text-primary fw-bold">ฟอร์มลงทะเบียนอบรม</h1>
+            <h1 class="text-primary fw-bold">ลงทะเบียนแข่งขันยิงปืน</h1>
+            <h3 class="text-primary fw-bold">333 IDPA 1/2021 #The Killer</h3>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col text-center">
-            <h5 class="fw-light">กรอกข้อมูลให้ครบสมบูรณ์ทุกช่อง</h5>
+            <h5 class="fw-light"></h5>
           </div>
         </div>
         <div class="row justify-content-center mt-2">
           <div class="col-md-3 mt-3">
-            <label for="name" class="form-label">ชื่อ-สกุล</label>
+            <label for="name" class="form-label">Name</label>
             <input
               type="text"
               class="form-control"
               name="name"
               id="name"
-              placeholder="ชื่อ-สกุล" required
+              placeholder="กรอก ชื่อ-นามสกุล ภาษาอังกฤษ"
+              required
             />
           </div>
           <div class="col-md-3 mt-3">
-            <label for="name" class="form-label">sms</label>
+            <label for="name" class="form-label">IDPA Member</label>
             <input
               type="text"
               class="form-control"
               name="name"
               id="sms"
-              placeholder="SMS" required
+              placeholder="กรอกหมายเลข IDPA สากล"
             />
           </div>
-          <div class="col-md-3 mt-3">
+          
+          
+<!--           <div class="col-md-3 mt-3">
             <label for="position" class="form-label">ตำแหน่ง</label>
             <select class="form-select" id="position" name="position"></select>
+          </div> -->
+        </div>
+        
+        <div class="row justify-content-center">
+          <div class="col text-center">
+            <h5 class="fw-light"></h5>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="col-md-3 mt-3">
+             <label for="division">Division:</label>
+              <select class="form-control" id="division">
+                <option selected>Choose</option>
+                    <option>ESP</option>
+                    <option>SSP</option>
+                    <option>CDP</option>
+                    <option>CCP</option>
+                    <option>REV</option>
+                    <option>BUG</option>
+                    <option>PCC</option>
+                    <option>CO</option>
+                   <option>SPD</option>
+             </select>
+      </div>
+        <div class="col-md-3 mt-3">
+             <label for="class">Class:</label>
+              <select class="form-control" id="class">
+                <option selected>Choose</option>
+                    <option>MA</option>
+                    <option>EX</option>
+                    <option>SS</option>
+                    <option>MM</option>
+                    <option>NV</option>
+                    <option>UN</option>
+             </select>
+          
+     <div class="col-md-3 mt-3">
+          <label for="cat">Categories :</label>
+          <div class="input-group mb-3">
+         <label class="input-group-text" for="inputGroupSelect01">Choose</label>
+  <select class="form-select" id="Cat01">
+    <option selected>Category 1</option>
+    <option value="1">Junior</option>
+    <option value="2">Senior</option>
+    <option value="3">Lady</option>
+    <option value="1"> Law Enforcement</option>
+    <option value="2">State Enterprise</option>
+    <option value="3">International</option>
+  </select>
+</div>
+       <div class="input-group mb-3">
+         <label class="input-group-text" for="inputGroupSelect01">Choose</label>
+  <select class="form-select" id="Cat02">
+    <option selected>Category 2</option>
+    <option value="1">Junior</option>
+    <option value="2">Senior</option>
+    <option value="3">Lady</option>
+    <option value="1"> Law Enforcement</option>
+    <option value="2">State Enterprise</option>
+    <option value="3">International</option>
+  </select>
+</div>
+              <div class="input-group mb-3">
+         <label class="input-group-text" for="inputGroupSelect01">Choose</label>
+  <select class="form-select" id="Cat03">
+    <option selected>Category 3</option>
+    <option value="1">Junior</option>
+    <option value="2">Senior</option>
+    <option value="3">Lady</option>
+    <option value="1"> Law Enforcement</option>
+    <option value="2">State Enterprise</option>
+    <option value="3">International</option>
+  </select>
+</div>
+      
+
+      
+      
+
+</div>
+      
+          </div>
+       <div class="col-md-3 mt-3">
+             <label for="phone" class="form-label">Squad :</label>
+         <select class="form-select" aria-label="Default select example">
+  <option selected>Choose</option>
+  <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>Pre-match</option>
+</select>
+          </div>
+<!--         <div class="row justify-content-center">
           <div class="col-md-3 mt-3">
             <label for="email" class="form-label">อีเมล์</label>
             <input
@@ -77,9 +185,9 @@
               class="form-control"
               name="email"
               id="email"
-              placeholder="name@example.com" required
+              placeholder="name@example.com"
             />
-          </div>
+          </div> -->
           <div class="col-md-3 mt-3">
             <label for="phone" class="form-label">เบอร์โทร</label>
             <input
@@ -89,10 +197,11 @@
               id="phone"
               placeholder="เบอร์โทร"
               pattern="0[986]\d{8}"
-              title="เบอร์โทรไม่ถูกต้อง" required
+              title="เบอร์โทรไม่ถูกต้อง"
             />
           </div>
-        </div>
+      
+        
         <div class="row justify-content-center">
           <div class="col-md-3 mt-3">
             <div class="col-md mt-2 text-center">
@@ -104,7 +213,7 @@
               name="img_bill"
               accept="image/*"
               class="form-control"
-              id="img_bill" required
+              id="img_bill"
             />
           </div>
         </div>
@@ -116,7 +225,7 @@
               id="btn_submit"
             >
               บันทึกข้อมูล
-            </button>
+              </button>
           </div>
         </div>
       </form>
