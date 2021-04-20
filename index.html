@@ -162,16 +162,21 @@ body {
                       contents: {
   "type": "bubble",
   "hero": {
-    "type": "image",
-    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
-    "size": "full",
-    "aspectRatio": "20:13",
-    "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "http://linecorp.com/"
-    }
-  },
+                                  type: "box",
+                                  layout: "vertical",
+                                  contents: [
+                                    {
+                                      type: "image",
+                                      url: response.url.replace(
+                                        "&export=download",
+                                        ""
+                                      ),
+                                      aspectMode: "cover",
+                                      size: "full"
+                                    }
+                                  ],
+                                  cornerRadius: "lg"
+                                },
   "body": {
     "type": "box",
     "layout": "vertical",
