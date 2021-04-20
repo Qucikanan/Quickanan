@@ -28,24 +28,30 @@
       src="https://static.line-scdn.net/liff/edge/2/sdk.js"
     ></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+  <style>
+body {
+  font-family: "Kanit", sans-serif;
+}
+</style>
   </head>
   <body>
     <div class="continer-fluid">
       <form class="m-5" id="registform">
         <div class="row justify-content-center">
           <div class="col text-center">
-            <h1 class="text-primary fw-bold">ฟอร์มลงทะเบียนอบรม</h1>
+            <h1 class="text-primary fw-bold">ฟอร์มส่งสลิป</h1>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col text-center">
-            <h5 class="fw-light">กรอกข้อมูลให้ครบสมบูรณ์ทุกช่อง</h5>
+            <h5 class="fw-light"></h5>
           </div>
         </div>
         <div class="row justify-content-center mt-2">
           
           <div class="col-md-3 mt-3">
-            <label for="position" class="form-label">เลือก</label>
+            <label for="position" class="form-label">สลิปเป็นของนักกีฬาท่านใด ? </label>
             <select class="form-select" id="position" name="position"></select>
           </div>
         </div>
@@ -104,7 +110,7 @@
         dropdown.forEach((row, i) => {
           if (i == 0) {
             $("#position").append(
-              `<option value="" disabled="" selected="">เลือกตำแหน่ง</option>`
+              `<option value="" disabled="" selected="">list รายชื่อนักกีฬา</option>`
             );
           }
           $("#position").append(`<option value="${row}">${row}</option>`);
@@ -154,160 +160,31 @@
                       type: "flex",
                       altText: "result",
                       contents: {
-                        type: "bubble",
-                        body: {
-                          type: "box",
-                          layout: "vertical",
-                          contents: [
-                            {
-                              type: "box",
-                              layout: "vertical",
-                              contents: [
-                                {
-                                  type: "text",
-                                  text: "บันทึกข้อมูลสำเร็จ",
-                                  size: "xl",
-                                  adjustMode: "shrink-to-fit",
-                                  align: "center",
-                                  margin: "none",
-                                  weight: "bold"
-                                }
-                              ]
-                            },
-                            {
-                              type: "separator"
-                            },
-                            {
-                              type: "box",
-                              layout: "vertical",
-                              margin: "xl",
-                              spacing: "md",
-                              contents: [
-                                {
-                                  type: "box",
-                                  layout: "baseline",
-                                  spacing: "sm",
-                                  contents: [
-                                    {
-                                      type: "text",
-                                      text: "ชื่อ",
-                                      color: "#aaaaaa",
-                                      size: "sm",
-                                      flex: 2
-                                    },
-                                    {
-                                      type: "text",
-                                      text: $("#position").val(),
-                                      wrap: true,
-                                      color: "#666666",
-                                      size: "sm",
-                                      flex: 5
-                                    }
-                                  ]
-                                },
-                                {
-                                  type: "box",
-                                  layout: "baseline",
-                                  spacing: "sm",
-                                  contents: [
-                                    {
-                                      type: "text",
-                                      text: "ตำแหน่ง",
-                                      color: "#aaaaaa",
-                                      size: "sm",
-                                      flex: 2
-                                    },
-                                    {
-                                      type: "text",
-                                      text: $("#position").val(),
-                                      wrap: true,
-                                      color: "#666666",
-                                      size: "sm",
-                                      flex: 5
-                                    }
-                                  ]
-                                },
-                                {
-                                  type: "box",
-                                  layout: "baseline",
-                                  spacing: "sm",
-                                  contents: [
-                                    {
-                                      type: "text",
-                                      text: "อีเมล์",
-                                      color: "#aaaaaa",
-                                      size: "sm",
-                                      flex: 2
-                                    },
-                                    {
-                                      type: "text",
-                                      text:$("#position").val(),
-                                      wrap: true,
-                                      color: "#666666",
-                                      size: "sm",
-                                      flex: 5
-                                    }
-                                  ]
-                                },
-                                {
-                                  type: "box",
-                                  layout: "baseline",
-                                  spacing: "sm",
-                                  contents: [
-                                    {
-                                      type: "text",
-                                      text: "เบอร์โทร",
-                                      color: "#aaaaaa",
-                                      size: "sm",
-                                      flex: 2
-                                    },
-                                    {
-                                      type: "text",
-                                      text: $("#position").val(),
-                                      wrap: true,
-                                      color: "#666666",
-                                      size: "sm",
-                                      flex: 5
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              type: "separator"
-                            },
-                            {
-                              type: "box",
-                              layout: "vertical",
-                              contents: [
-                                {
-                                  type: "text",
-                                  text: "ใบเสร็จ",
-                                  align: "center"
-                                },
-                                {
-                                  type: "box",
-                                  layout: "vertical",
-                                  contents: [
-                                    {
-                                      type: "image",
-                                      url: response.url.replace(
-                                        "&export=download",
-                                        ""
-                                      ),
-                                      aspectMode: "cover",
-                                      size: "full"
-                                    }
-                                  ],
-                                  cornerRadius: "lg"
-                                }
-                              ],
-                              spacing: "md"
-                            }
-                          ],
-                          spacing: "md"
-                        }
-                      }
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "http://linecorp.com/"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Brown Cafe",
+        "weight": "bold",
+        "size": "xl"
+      }
+    ]
+  }
+}
                     }
                   ])
                   .then(() => {
