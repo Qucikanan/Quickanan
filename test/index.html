@@ -54,7 +54,7 @@ var tel = document.getElementById("tel").value;
         var xos = liff.getOS();
   x.innerHTML = " กำลังลงทะเบียน... ";
 var xmlhttp = new XMLHttpRequest();
-        var theUrl = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX?fn="+fn+"&ln="+ln+"&nn="+nn+"&tel="+tel+"&uid="+uid+"&dis="+dis+"&pic="+pic;
+        var theUrl = "https://script.google.com/macros/s/AKfycbzYtBpkSJWeTxzrsjtNiVYT1yPmQkD7JwdkUZDKQ4hIVUzk6arF/exec?fn="+fn+"&ln="+ln+"&nn="+nn+"&tel="+tel+"&uid="+uid+"&dis="+dis+"&pic="+pic;
         xmlhttp.open('GET', theUrl);
         xmlhttp.send();
             xmlhttp.onreadystatechange = function() {
