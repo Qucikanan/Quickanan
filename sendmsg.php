@@ -59,8 +59,8 @@
     "layout": "vertical",
     "contents": [
       {
-        "type": "" +name,
-        "text": "Brown Cafe",
+        "type": "text" ,
+        "text": "Brown Cafe" +name,
         "weight": "bold",
         "size": "xl"
       }
