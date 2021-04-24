@@ -1,4 +1,3 @@
-  
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -17,7 +16,18 @@
     <script src="/script.js" defer></script>
   </head>  
   <body>
+
     <div class="container">
+        <div class="col-md-3 mt-3">
+            <label for="name" class="form-label">ชื่อ-สกุล</label>
+            <input
+              type="text"
+              class="form-control"
+              name="name"
+              id="name"
+              placeholder="ชื่อ-สกุล"
+            />
+          </div>
  <button id="btnShare"  class="btn btn-primary" onclick="sendShare()">send msg</button>
   <button id="btnLogin" class="btn btn-success" onclick="liff.login()">Log In</button>
   <button id="btnLogOut" class="btn btn-warning" onclick="logOut()">Log Out</button>
@@ -31,38 +41,30 @@
           "altText": "Flex Message",
           "contents":
              
-             {
+          {
   "type": "bubble",
   "hero": {
     "type": "image",
+    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png",
     "size": "full",
+    "aspectRatio": "20:13",
     "aspectMode": "cover",
-    "url": "https://dl.dropbox.com/s/nbqnqawdg2tipt7/Card%20MS-99.png",
     "action": {
       "type": "uri",
-      "label": "Add line",
-      "uri": "https://lin.ee/3PZvTwW"
+      "uri": "http://linecorp.com/"
     }
   },
-  "footer": {
+  "body": {
     "type": "box",
     "layout": "vertical",
     "contents": [
       {
-        "type": "button",
-        "action": {
-          "type": "uri",
-          "label": "Add line",
-          "uri": "https://lin.ee/3PZvTwW"
-        },
-        "style": "primary"
+        "type": "" +name,
+        "text": "Brown Cafe",
+        "weight": "bold",
+        "size": "xl"
       }
-    ],
-    "action": {
-      "type": "uri",
-      "label": "Add line",
-      "uri": "https://lin.ee/3PZvTwW"
-    }
+    ]
   }
 }
              
@@ -80,12 +82,10 @@
         alert(`[${result.status}] Message sent!`)
       } else {
         const [majorVer, minorVer, patchVer] = (liff.getLineVersion() || "").split('.');
-
         if (minorVer === undefined) {
           alert('ShareTargetPicker was canceled in external browser')
           return
         }
-
         if (parseInt(majorVer) >= 10 && parseInt(minorVer) >= 10 && parseInt(patchVer) > 0) {
           alert('ShareTargetPicker was canceled in LINE app')
         }
