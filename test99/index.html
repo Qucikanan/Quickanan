@@ -89,18 +89,16 @@
             </div>
         </div>
           <script>
-              liff.init({liffId: "1655710211-Gpl2wkjO"}, function() {
-     if (liff.isLoggedIn()) {
-     testclick();
-       sharelink();
-   } else {
-        liff.login();
-      }
+             window.onload = function() {
+  initializeLiff('1655710211-Gpl2wkjO');
 
-  
+}
 
-  });
-    
+function initializeLiff(myLiffId) {
+    liff
+        .init({
+            liffId: myLiffId
+        });
 }
             liff.getProfile().then(function(profile) {
             var uid = profile.userId;
