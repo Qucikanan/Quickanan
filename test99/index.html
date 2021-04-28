@@ -1,127 +1,59 @@
-//https://script.google.com/macros/s/AKfycbz9BMAnkeXPHauITnOSnVUDKe1mNWr-s-_-hclvzRx-aPtM9jE/exec
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <style>
-            .register .nav-tabs .nav-link:hover{
-                border: none;
-            }
-            .text-align{
-                margin-top: -3%;
-                margin-bottom: -9%;
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
 
-                padding: 10%;
-                margin-left: 30%;
-            }
-            .form-new{
-                margin-right: 22%;
-                margin-left: 20%;
-            }
-            .register-heading{
-                margin-left: 21%;
-                margin-bottom: 10%;
-                color: #e9ecef;
-            }
-            .register-heading h1{
-                margin-left: 21%;
-                margin-bottom: 10%;
-                color: #e9ecef;
-            }
-            .register{
-                background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
-                margin-top: 3%;
-                padding: 3%;
-                border-radius: 2.5rem;
-            }
-            .btnSubmit
-            {
-                width: 50%;
-                border-radius: 1rem;
-                padding: 1.5%;
-                color: #fff;
-                background-color: #03612e;
-                border: none;
-                cursor: pointer;
-                margin-right: 6%;
-                color: rgb(246, 246, 252);
-                margin-top: 4%;
-            }
-    </style>
-
-</head>
-<body>
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeyBT7sZ2AJn-D48UsNLxZEHyxV48lbaTHQoWdZ6TJFP1Hziw/formResponse"
+          method="post">
+      <div class="form-element">
+        <spen>Email address</spen>
+        <input type = "email" name="entry.1402437692" placeholder="Email">
+       </div>
+      
+      <div class="form-element">
+        <spen>Name</spen>
+        <input type = "text" name="entry.2146030279" placeholder="name">
+       </div>
+      
+       <div class="form-element">
+        <spen>Code</spen>
+        <input type = "text" name="entry.938442844" placeholder="Code">
+       </div>
+      <div class="form-element">
+        <spen>Your msg</spen>
+        <input type = "text" name="entry.989318961" placeholder="your msg">
+       </div>
+      <button type="sumbil"> Send
+        
+      </button>
+    </form>
     
-<div class="container register">
-            <div class="row">
-                <div class="col-md-12">
-                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h3 class="register-heading">Connect Google Spreadsheet to HTML</h3>
-                            <div class="row register-form">
-                                <div class="col-md-12">
-                                    <form method="post" autocomplete="off" id="google-sheet" name="google-sheet">
-                                        <div class="form-group">
-                                            <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="number"  name="Phone" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
-                                        </div>
-                                        <p id="uid"><b>userId:</b> </p>
-                                        <p id="uname"><b>displayName:</b> </p>
-                                      
-                                      
-                                        <div class="form-group">
-                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Login" />
-                                        </div>
-                                      
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
-          <script>
-             window.onload = function() {
-  initializeLiff('1655710211-Gpl2wkjO');
-
-}
-
-function initializeLiff(myLiffId) {
-    liff
-        .init({
-            liffId: myLiffId
-        });
-}
-            liff.getProfile().then(function(profile) {
-            var uid = profile.userId;
-            var uname = profile.displayName;
-        });
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbz9BMAnkeXPHauITnOSnVUDKe1mNWr-s-_-hclvzRx-aPtM9jE/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => document.getElementById("google-sheet").reset())
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
-  
-  
-  
-  
-  
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</body>
+    <script>
+ 
+  async function getUserProfile() {
+   const profile = await liff.getProfile()
+   var entry.2146030279=${profile.userId}
+   var entry.938442844=${profile.displayName}
+   var entry.989318961=${profile.pictureUrl}
+   
+   }
+ 
+  async function main() {
+     await liff.init({ liffId: "1655710211-Gpl2wkjO" })
+       if (liff.isLoggedIn()) {
+         getUserProfile()
+       } else {
+         liff.login()
+       }
+   }
+   main()
+ </script>
+  </body>
 </html>
+
             
