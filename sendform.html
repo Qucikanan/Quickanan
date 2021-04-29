@@ -62,6 +62,9 @@
                             <div class="row register-form">
                                 <div class="col-md-12">
                                     <form method="post" autocomplete="off" id="google-sheet" name="google-sheet">
+                                    	<div class="form-group">
+                                            <input type="hidden" name="Uid" class="form-control" placeholder="Your Uid *" value="" required=""/>
+                                        </div>
                                         <div class="form-group">
                                             <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
                                         </div>
@@ -82,6 +85,31 @@
             </div>
         </div>
           <script>
+          	    window.onload = function() {
+  initializeLiff('1655710211-rXXd0P4v');
+}
+
+function initializeLiff(myLiffId) {
+    liff
+        .init({
+            liffId: myLiffId
+        })
+        .then(() => {
+        	getid();
+        })
+        .catch((err) => {
+        });
+}
+function getid(){
+	        	     liff.getProfile().then(function(profile) {
+            const uid = profile.userId;
+            const uname = profile.displayName;
+            document.getElementsByName("Uid")[0].value = uid;
+            document.getElementsByName("Name")[0].value = uname;
+        });
+}
+
+
             const scriptURL = 'https://script.google.com/macros/s/AKfycbz9BMAnkeXPHauITnOSnVUDKe1mNWr-s-_-hclvzRx-aPtM9jE/exec'
             const form = document.forms['google-sheet']
           
@@ -96,7 +124,7 @@
   
   
   
-  
+        <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
