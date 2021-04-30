@@ -137,7 +137,7 @@ body {
         </div>
            <div class="col justify-content-center">
           <div class="col-md-3 mt-4 text-center">
-            <button class="btn btn-primary btn-lg" type="submit"  name="submit" >Send</button>
+            <button class="btn btn-primary btn-lg" type="submit"  name="submit" id="submit" >Send</button>
           </div>
         </div>
           <div class="row justify-content-center mt-2">
@@ -198,31 +198,47 @@ function getid(){
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => document.getElementById("google-sheet").reset())
-                .then(response => {
-   liff.sendMessages([{
-         "type": "template",
-  "altText": "this is a buttons template",
-  "template": {
-    "type": "buttons",
-    "thumbnailImageUrl": "https://stickershop.line-scdn.net/stickershop/v1/product/"+x+"/iPhone/main@2x.png",
-    "imageAspectRatio": "square",
-    "imageSize": "cover",
-    "title": "fdsafs",
-    "text": ""+Uname,
-    "actions": [
+                .catch(error => console.error('Error!', error.message))
+            })
+            
+            document.getElementById('submit').addEventListener('click', function() {
+
+     liff.sendMessages([ {
+      "type": "flex",
+      "altText": "This is a Flex Message",
+      "contents": {
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": ""+upic,
+    "size": "full",
+    "aspectRatio": "1:1",
+    "aspectMode": "fit",
+    "action": {
+      "type": "uri",
+      "uri": "http://linecorp.com/"
+    }
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
       {
-        "type": "uri",
-        "label": "Action 1",
-        "uri": ""+Upic
+        "type": "text",
+        "text": ""+uname,
+        "weight": "bold",
+        "size": "xl"
       }
     ]
   }
-} ]).then(function () {
+}
+
+}]).then(function () {
             liff.closeWindow();
         })
-            })    
-                .catch(error => console.error('Error!', error.message))
-            })
+     
+   }); 
+            
           </script>
   
   
@@ -233,3 +249,4 @@ function getid(){
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
+
