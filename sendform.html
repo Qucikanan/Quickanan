@@ -198,7 +198,8 @@ function getid(){
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => document.getElementById("google-sheet").reset())
-                .liff.sendMessages([{
+                .then(response => {
+   liff.sendMessages([{
          "type": "template",
   "altText": "this is a buttons template",
   "template": {
@@ -219,6 +220,7 @@ function getid(){
 } ]).then(function () {
             liff.closeWindow();
         })
+            })    
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
