@@ -49,13 +49,18 @@ body {
         <form method="post" autocomplete="off" id="google-sheet" name="google-sheet">
           <div class="col justify-content-center mt-2">
             <div class="col-md-3 mt-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" name="Uid"  id="uid"  placeholder="Userid" required />
+            <label for="name" class="form-label"></label>
+            <input type="hidden" class="form-control" name="Uid"  id="uid"  placeholder="Userid" required />
           </div>
             <div class="col-md-3 mt-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" name="UName"  id="uname"  placeholder="UName" required />
+            <label for="name" class="form-label"></label>
+            <input type="hidden" class="form-control" name="UName"  id="uname"  placeholder="UName" required />
           </div>
+                 <div class="col-md-3 mt-3">
+            <label for="name" class="form-label"></label>
+            <input type="hidden" class="form-control" name="Upic"  id="upic"  placeholder="Upicture" required />
+          </div>
+                 
                    
             
             
@@ -172,8 +177,10 @@ function getid(){
 	        	     liff.getProfile().then(function(profile) {
             const uid = profile.userId;
             const uname = profile.displayName;
+            const upic = profile.pictureUrl;
             document.getElementsByName("Uid")[0].value = uid;
             document.getElementsByName("UName")[0].value = uname;
+            document.getElementsByName("Upic")[0].value = upic;      
         });
 }
             
