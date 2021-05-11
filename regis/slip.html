@@ -28,12 +28,15 @@
       src="https://static.line-scdn.net/liff/edge/2/sdk.js"
     ></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
-  <style>
-body {
-  font-family: "Kanit", sans-serif;
-}
-</style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Kanit"
+    />
+    <style>
+      body {
+        font-family: "Kanit", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <div class="continer-fluid">
@@ -49,13 +52,20 @@ body {
           </div>
         </div>
         <div class="row justify-content-center mt-2">
-          
           <div class="col-md-3 mt-3">
-            <label for="position" class="form-label">สลิปเป็นของนักกีฬาท่านใด ? </label>
-            <select class="form-select" id="position" name="position"></select>
+            <label for="name" class="form-label"
+              >สลิปเป็นของนักกีฬาท่านใด ?</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="position"
+              name="position"
+              placeholder="ชื่อ-สกุล"
+            />
           </div>
         </div>
-        
+
         <div class="row justify-content-center">
           <div class="col-md-3 mt-3">
             <div class="col-md mt-2 text-center">
@@ -155,41 +165,44 @@ body {
             if (response.result == "success") {
               if (liff.isInClient()) {
                 liff
-                  .sendMessages([
+                  .sendMessages([                              
                     {
                       type: "flex",
                       altText: "result",
-                      contents: {
-  "type": "bubble",
-  "hero": {
-                                  type: "box",
-                                  layout: "vertical",
-                                  contents: [
-                                    {
-                                      type: "image",
-                                      url: response.url.replace(
-                                        "&export=download",
-                                        ""
-                                      ),
-                                      aspectMode: "cover",
-                                      size: "full"
-                                    }
-                                  ],
-                                  cornerRadius: "lg"
-                                },
-  "body": {
-    "type": "box",
-    "layout": "vertical",
-    "contents": [
-      {
-        "type": "text",
-        "text": $("#position").val(),
-        "weight": "bold",
-        "size": "xl"
-      }
-    ]
-  }
-}
+                      contents: 
+                /// วาง Flax ตรงนี้      
+                      {
+                        type: "bubble",
+                        hero: {
+                          type: "box",
+                          layout: "vertical",
+                          contents: [
+                            {
+                              type: "image",
+                              url: response.url.replace("&export=download", ""),
+                              aspectMode: "cover",
+                              size: "full"
+                            }
+                          ],
+                          cornerRadius: "lg"
+                        },
+                        body: {
+                          type: "box",
+                          layout: "vertical",
+                          contents: [
+                            {
+                              type: "text",
+                              text: "สลิปของ : " + $("#position").val(),
+                              "wrap": true,
+                              weight: "bold",
+                              size: "xl"
+                            }
+                          ]
+                        }
+                      }
+                      
+                  ///ปิด flex ตรงนี้    
+                      
                     }
                   ])
                   .then(() => {
