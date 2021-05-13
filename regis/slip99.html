@@ -17,7 +17,7 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <title>Document</title>
+    <title>-</title>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -39,13 +39,63 @@
     </style>
   </head>
   <body>
+    <nav class="navbar navbar-expand-sm bg-warning navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">&nbsp&nbsp Tingly Army Club </a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      
+    </div>
+
     <div class="continer-fluid">
+      <div class="text-center">
+          <p class="text-muted fw-bold"> ชำระเงินได้ที่ : ธนาคารทหารไทย<br> ชื่อบัญชี การแข่งขันยิงปืนนวมิทราชินี<br> เลขที่บัญชี 301-2-87590-6 &nbsp </p>
+            <button
+              type="button"
+              onclick="myFunction()"
+              class="btn btn-light btn-sm"
+            >
+              Copy เลขที่บัญชี
+            </button>
+          
+          <input type="hidden" value="3012875906" id="myInput" />
+        </div>
       <form class="m-5" id="registform">
         <div class="row justify-content-center">
           <div class="col text-center">
-            <h1 class="text-primary fw-bold">ฟอร์มส่งสลิป</h1>
+            <h1 class="text-muted fw-bold">ฟอร์มส่งสลิป</h1>
           </div>
         </div>
+
+        
+   
+      
+
         <div class="row justify-content-center">
           <div class="col text-center">
             <h5 class="fw-light"></h5>
@@ -62,6 +112,7 @@
               id="position"
               name="position"
               placeholder="ชื่อ-สกุล"
+              required
             />
           </div>
         </div>
@@ -78,13 +129,14 @@
               accept="image/*"
               class="form-control"
               id="img_bill"
+              required
             />
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-md-3 mt-4 text-center">
             <button
-              class="btn btn-primary btn-lg"
+              class="btn btn-outline-warning btn-lg"
               type="submit"
               id="btn_submit"
             >
@@ -95,6 +147,13 @@
       </form>
     </div>
     <script>
+      function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+  swal("คัดลอกเลขที่บัญชีเรียบร้อย!");
+}
+
       let liffId = "1655586880-ReVYMAjb";
       var scriptURL =
         "https://script.google.com/macros/s/AKfycbwwBEidtG9QsM1o3gioxi9ilkysWIVFaFFB984PnilTrV5YQqk/exec";
@@ -165,44 +224,46 @@
             if (response.result == "success") {
               if (liff.isInClient()) {
                 liff
-                  .sendMessages([                              
+                  .sendMessages([
                     {
                       type: "flex",
                       altText: "result",
-                      contents: 
-                /// วาง Flax ตรงนี้      
-                      {
-                        type: "bubble",
-                        hero: {
-                          type: "box",
-                          layout: "vertical",
-                          contents: [
-                            {
-                              type: "image",
-                              url: response.url.replace("&export=download", ""),
-                              aspectMode: "cover",
-                              size: "full"
-                            }
-                          ],
-                          cornerRadius: "lg"
-                        },
-                        body: {
-                          type: "box",
-                          layout: "vertical",
-                          contents: [
-                            {
-                              type: "text",
-                              text: "สลิปของ : " + $("#position").val(),
-                              "wrap": true,
-                              weight: "bold",
-                              size: "xl"
-                            }
-                          ]
+                      contents:
+                        /// วาง Flax ตรงนี้
+                        {
+                          type: "bubble",
+                          hero: {
+                            type: "box",
+                            layout: "vertical",
+                            contents: [
+                              {
+                                type: "image",
+                                url: response.url.replace(
+                                  "&export=download",
+                                  ""
+                                ),
+                                aspectMode: "cover",
+                                size: "full"
+                              }
+                            ],
+                            cornerRadius: "lg"
+                          },
+                          body: {
+                            type: "box",
+                            layout: "vertical",
+                            contents: [
+                              {
+                                type: "text",
+                                text: "สลิปของ : " + $("#position").val(),
+                                wrap: true,
+                                weight: "bold",
+                                size: "xl"
+                              }
+                            ]
+                          }
                         }
-                      }
-                      
-                  ///ปิด flex ตรงนี้    
-                      
+
+                      ///ปิด flex ตรงนี้
                     }
                   ])
                   .then(() => {
@@ -273,5 +334,6 @@
         });
       });
     </script>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </body>
 </html>
