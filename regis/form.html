@@ -76,6 +76,7 @@
                 required
               />
             </div>
+
             <div class="col-md-3 mt-3">
               <label for="sel1">Division</label>
               <select
@@ -117,7 +118,18 @@
             </div>
             <div class="col-md-3 mt-3">
               <label for="sel1">Catagories</label>
-            
+
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  class="check"
+                  name="blank"
+                  id="blank"
+                  value="ไม่ระบุ"
+                  checked
+                />
+                <label for="checkbox"> ไม่ระบุ </label>
+              </div>
               <div class="checkbox">
                 <label
                   ><input
@@ -262,291 +274,292 @@
     </div>
 
     <script>
-        window.onload = function() {
-          initializeLiff("1655710211-rXXd0P4v");
-        };
+      window.onload = function() {
+        initializeLiff("1655710211-rXXd0P4v");
+      };
 
-        function initializeLiff(myLiffId) {
+      function initializeLiff(myLiffId) {
+        liff
+          .init({
+            liffId: myLiffId
+          })
+          .then(() => {
+            getid();
+          })
+          .then(() => {
+            testclick();
+          })
+          .catch(err => {});
+      }
+
+      function getid() {
+        liff.getProfile().then(function(profile) {
+          const uid = profile.userId;
+          const uname = profile.displayName;
+          const upic = profile.pictureUrl;
+          document.getElementsByName("Uid")[0].value = uid;
+          document.getElementsByName("UName")[0].value = uname;
+          document.getElementsByName("Upic")[0].value = upic;
+        });
+      }
+
+      function testclick() {
+        //button1
+
+        document.getElementById("submit").addEventListener("click", function() {
+          var x = document.getElementById("name");
+          var y = document.getElementById("member");
+          var z = document.getElementById("division");
+          var a = document.getElementById("klass");
+          var b = document.getElementById("sq");
+          var c = document.getElementById("upic");
+          var checkbox = [].map
+            .call(
+              document.querySelectorAll('[type="checkbox"]:checked'),
+              function(v) {
+                return v.value;
+              }
+            )
+            .join(" , ");
+
           liff
-            .init({
-              liffId: myLiffId
-            })
-            .then(() => {
-              getid();
-            })
-            .then(() => {
-              testclick();
-            })
-            .catch(err => {});
-        }
-
-        function getid() {
-          liff.getProfile().then(function(profile) {
-            const uid = profile.userId;
-            const uname = profile.displayName;
-            const upic = profile.pictureUrl;
-            document.getElementsByName("Uid")[0].value = uid;
-            document.getElementsByName("UName")[0].value = uname;
-            document.getElementsByName("Upic")[0].value = upic;
-          });
-        }
-
-
-
-        function testclick() {
-          //button1
-
-          document.getElementById("submit").addEventListener("click", function() {
-            var x = document.getElementById("name");
-            var y = document.getElementById("member");
-            var z = document.getElementById("division");
-            var a = document.getElementById("klass");
-            var b = document.getElementById("sq");
-            var c = document.getElementById("upic");
-            var checkbox = [].map.call(document.querySelectorAll('[type="checkbox"]:checked'), function(v) {
-        return v.value
-      }).join(' , ');
-
-
-            liff
-              .sendMessages([
-                {
-                  type: "flex",
-                  altText: "This is a Flex Message",
-                  contents: {
-                    type: "bubble",
-                    header: {
-                      type: "box",
-                      layout: "vertical",
-                      contents: [
-                        {
-                          type: "box",
-                          layout: "vertical",
-                          contents: [
-                            {
-                              type: "text",
-                              text: "ลงทะเบียนสำเร็จ!!!",
-                              size: "xxl",
-                              weight: "bold",
-                              align: "center"
-                            }
-                          ]
-                        },
-                        {
-                          type: "box",
-                          layout: "vertical",
-                          contents: [
-                            {
-                              type: "image",
-                              url: c.value,
-                              margin: "none",
-                              size: "lg",
-                              aspectMode: "cover"
-                            }
-                          ],
-                          cornerRadius: "100px",
-                          position: "absolute",
-                          offsetStart: "35%",
-                          offsetTop: "38%"
-                        }
-                      ],
-                      height: "200px"
-                    },
-                    body: {
-                      type: "box",
-                      layout: "vertical",
-                      contents: [
-                        {
-                          type: "box",
-                          layout: "vertical",
-                          margin: "none",
-                          spacing: "sm",
-                          contents: [
-                            {
-                              type: "box",
-                              layout: "baseline",
-                              spacing: "sm",
-                              contents: [
-                                {
-                                  type: "text",
-                                  text: "IDPA Member",
-                                  color: "#aaaaaa",
-                                  size: "sm",
-                                  flex: 3,
-                                  wrap: true
-                                },
-                                {
-                                  type: "text",
-                                  text: "" + y.value,
-                                  wrap: true,
-                                  color: "#666666",
-                                  size: "md",
-                                  flex: 5,
-                                  position: "relative"
-                                }
-                              ]
-                            },
-                            {
-                              type: "box",
-                              layout: "baseline",
-                              spacing: "sm",
-                              contents: [
-                                {
-                                  type: "text",
-                                  text: "Name :",
-                                  color: "#aaaaaa",
-                                  size: "sm",
-                                  flex: 3
-                                },
-                                {
-                                  type: "text",
-                                  text: "" + x.value,
-                                  wrap: true,
-                                  color: "#666666",
-                                  size: "md",
-                                  flex: 5
-                                }
-                              ]
-                            },
-                            {
-                              type: "box",
-                              layout: "baseline",
-                              spacing: "sm",
-                              contents: [
-                                {
-                                  type: "text",
-                                  text: "Division :",
-                                  color: "#aaaaaa",
-                                  size: "sm",
-                                  flex: 3
-                                },
-                                {
-                                  type: "text",
-                                  text: "" + z.value,
-                                  wrap: true,
-                                  color: "#666666",
-                                  size: "md",
-                                  flex: 5
-                                }
-                              ]
-                            },
-                            {
-                              type: "box",
-                              layout: "baseline",
-                              spacing: "sm",
-                              contents: [
-                                {
-                                  type: "text",
-                                  text: "Class :",
-                                  color: "#aaaaaa",
-                                  size: "sm",
-                                  flex: 3
-                                },
-                                {
-                                  type: "text",
-                                  text: "" + a.value,
-                                  wrap: true,
-                                  color: "#666666",
-                                  size: "md",
-                                  flex: 5
-                                }
-                              ]
-                            },
-                            {
-                              type: "box",
-                              layout: "baseline",
-                              spacing: "sm",
-                              contents: [
-                                {
-                                  type: "text",
-                                  text: "Catagories :",
-                                  color: "#aaaaaa",
-                                  size: "sm",
-                                  flex: 3
-                                },
-                                {
-                                  type: "text",
-                                  text:
-                                    "-" + checkbox ,
-                                  wrap: true,
-                                  color: "#666666",
-                                  size: "md",
-                                  flex: 5
-                                }
-                              ]
-                            },
-                            {
-                              type: "box",
-                              layout: "baseline",
-                              spacing: "sm",
-                              contents: [
-                                {
-                                  type: "text",
-                                  text: "Squad :",
-                                  color: "#aaaaaa",
-                                  size: "sm",
-                                  flex: 3
-                                },
-                                {
-                                  type: "text",
-                                  text: "" + b.value,
-                                  wrap: true,
-                                  color: "#666666",
-                                  size: "md",
-                                  flex: 5
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    footer: {
-                      type: "box",
-                      layout: "vertical",
-                      spacing: "sm",
-                      contents: [
-                        {
-                          type: "button",
-                          style: "primary",
-                          height: "sm",
-                          action: {
-                            type: "uri",
-                            label: "ส่งสลิป",
-                            uri: "https://liff.line.me/1655586880-ReVYMAjb"
+            .sendMessages([
+              {
+                type: "flex",
+                altText: "This is a Flex Message",
+                contents: {
+                  type: "bubble",
+                  header: {
+                    type: "box",
+                    layout: "vertical",
+                    contents: [
+                      {
+                        type: "box",
+                        layout: "vertical",
+                        contents: [
+                          {
+                            type: "text",
+                            text: "ลงทะเบียนสำเร็จ!!!",
+                            size: "xxl",
+                            weight: "bold",
+                            align: "center"
                           }
-                        },
-                        {
-                          type: "spacer",
-                          size: "sm"
-                        }
-                      ]
-                    },
-                    styles: {
-                      header: {
-                        backgroundColor: "#FFFFFF"
+                        ]
+                      },
+                      {
+                        type: "box",
+                        layout: "vertical",
+                        contents: [
+                          {
+                            type: "image",
+                            url: c.value,
+                            margin: "none",
+                            size: "lg",
+                            aspectMode: "cover"
+                          }
+                        ],
+                        cornerRadius: "100px",
+                        position: "absolute",
+                        offsetStart: "35%",
+                        offsetTop: "38%"
                       }
+                    ],
+                    height: "200px"
+                  },
+                  body: {
+                    type: "box",
+                    layout: "vertical",
+                    contents: [
+                      {
+                        type: "box",
+                        layout: "vertical",
+                        margin: "none",
+                        spacing: "sm",
+                        contents: [
+                          {
+                            type: "box",
+                            layout: "baseline",
+                            spacing: "sm",
+                            contents: [
+                              {
+                                type: "text",
+                                text: "IDPA Member",
+                                color: "#aaaaaa",
+                                size: "sm",
+                                flex: 3,
+                                wrap: true
+                              },
+                              {
+                                type: "text",
+                                text: "" + y.value,
+                                wrap: true,
+                                color: "#666666",
+                                size: "md",
+                                flex: 5,
+                                position: "relative"
+                              }
+                            ]
+                          },
+                          {
+                            type: "box",
+                            layout: "baseline",
+                            spacing: "sm",
+                            contents: [
+                              {
+                                type: "text",
+                                text: "Name :",
+                                color: "#aaaaaa",
+                                size: "sm",
+                                flex: 3
+                              },
+                              {
+                                type: "text",
+                                text: "" + x.value,
+                                wrap: true,
+                                color: "#666666",
+                                size: "md",
+                                flex: 5
+                              }
+                            ]
+                          },
+                          {
+                            type: "box",
+                            layout: "baseline",
+                            spacing: "sm",
+                            contents: [
+                              {
+                                type: "text",
+                                text: "Division :",
+                                color: "#aaaaaa",
+                                size: "sm",
+                                flex: 3
+                              },
+                              {
+                                type: "text",
+                                text: "" + z.value,
+                                wrap: true,
+                                color: "#666666",
+                                size: "md",
+                                flex: 5
+                              }
+                            ]
+                          },
+                          {
+                            type: "box",
+                            layout: "baseline",
+                            spacing: "sm",
+                            contents: [
+                              {
+                                type: "text",
+                                text: "Class :",
+                                color: "#aaaaaa",
+                                size: "sm",
+                                flex: 3
+                              },
+                              {
+                                type: "text",
+                                text: "" + a.value,
+                                wrap: true,
+                                color: "#666666",
+                                size: "md",
+                                flex: 5
+                              }
+                            ]
+                          },
+                          {
+                            type: "box",
+                            layout: "baseline",
+                            spacing: "sm",
+                            contents: [
+                              {
+                                type: "text",
+                                text: "Catagories :",
+                                color: "#aaaaaa",
+                                size: "sm",
+                                flex: 3
+                              },
+                              {
+                                type: "text",
+                                text: "" + checkbox,
+                                wrap: true,
+                                color: "#666666",
+                                size: "md",
+                                flex: 5
+                              }
+                            ]
+                          },
+                          {
+                            type: "box",
+                            layout: "baseline",
+                            spacing: "sm",
+                            contents: [
+                              {
+                                type: "text",
+                                text: "Squad :",
+                                color: "#aaaaaa",
+                                size: "sm",
+                                flex: 3
+                              },
+                              {
+                                type: "text",
+                                text: "" + b.value,
+                                wrap: true,
+                                color: "#666666",
+                                size: "md",
+                                flex: 5
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  footer: {
+                    type: "box",
+                    layout: "vertical",
+                    spacing: "sm",
+                    contents: [
+                      {
+                        type: "button",
+                        style: "primary",
+                        height: "sm",
+                        action: {
+                          type: "uri",
+                          label: "ส่งสลิป",
+                          uri: "https://liff.line.me/1655586880-ReVYMAjb"
+                        }
+                      },
+                      {
+                        type: "spacer",
+                        size: "sm"
+                      }
+                    ]
+                  },
+                  styles: {
+                    header: {
+                      backgroundColor: "#FFFFFF"
                     }
                   }
                 }
-              ])
-              .then(function() {
-                liff.closeWindow();
-              });
-          });
-        }
-
-        const scriptURL =
-          "https://script.google.com/macros/s/AKfycbz9BMAnkeXPHauITnOSnVUDKe1mNWr-s-_-hclvzRx-aPtM9jE/exec";
-        const form = document.forms["google-sheet"];
-
-        form.addEventListener("submit", e => {
-          e.preventDefault();
-          fetch(scriptURL, { method: "POST", body: new FormData(form) })
-            .then(response => document.getElementById("google-sheet").reset())
-
-            .catch(error => console.error("Error!", error.message));
+              }
+            ])
+            .then(function() {
+              liff.closeWindow();
+            });
         });
+      }
+
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz9BMAnkeXPHauITnOSnVUDKe1mNWr-s-_-hclvzRx-aPtM9jE/exec";
+      const form = document.forms["google-sheet"];
+
+      form.addEventListener("submit", e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then(response => document.getElementById("google-sheet").reset())
+
+          .catch(error => console.error("Error!", error.message));
+      });
     </script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
