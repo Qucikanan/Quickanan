@@ -16,6 +16,7 @@ body {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <marquee >สนามจะประกาศคะแนนหลังจากนักกีฬาคนสุดท้ายยิงเสร็จเรียบร้อย หากท่านแข่งขันเสร็จแล้ว กรุณาตรวจสอบคะแนนของท่านผ่าน Line หากมีข้อสงสัยหรือข้อมูลผิดพลาดโปรดติดต่อห้อง Stat</marquee>
   <section>
   
 </div>
