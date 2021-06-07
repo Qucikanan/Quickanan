@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+  <script src="https://kit.fontawesome.com/ad42651166.js" crossorigin="anonymous"></script>
   <style>
 body {
   font-family: "Kanit", sans-serif;
@@ -16,7 +17,7 @@ body {
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <marquee ><i class="fas fa-bullhorn"></i>สนามจะประกาศคะแนนหลังจากนักกีฬาคนสุดท้ายยิงเสร็จเรียบร้อย หากท่านแข่งขันเสร็จแล้ว กรุณาตรวจสอบคะแนนของท่านผ่าน Line หากมีข้อสงสัยหรือข้อมูลผิดพลาดโปรดติดต่อห้อง Stat</marquee>
+  <marquee ><i class="fas fa-bullhorn"></i>&nbsp&nbspสนามจะประกาศคะแนนหลังจากนักกีฬาคนสุดท้ายยิงเสร็จเรียบร้อย หากท่านแข่งขันเสร็จแล้ว กรุณาตรวจสอบคะแนนของท่านผ่าน Line หากมีข้อสงสัยหรือข้อมูลผิดพลาดโปรดติดต่อห้อง Stat</marquee>
   <section>
   
 </div>
