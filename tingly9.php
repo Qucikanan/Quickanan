@@ -21,9 +21,8 @@ body {
   <marquee ><i class="fas fa-bullhorn"></i>&nbsp&nbspสนามจะประกาศคะแนนหลังจากนักกีฬาคนสุดท้ายยิงเสร็จเรียบร้อย หากท่านแข่งขันเสร็จแล้ว กรุณาตรวจสอบคะแนนของท่านผ่าน Line หากมีข้อสงสัยหรือข้อมูลผิดพลาดโปรดติดต่อห้อง Stat</marquee>
   </div>
   <section>
-  
-<h4>กรุณากรอก Number นักกีฬา ในช่องค้นหา</h4>
-<br>
+  <br>
+   <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspกรุณากรอก Number นักกีฬา ในช่องค้นหา</h4>
       <center>
   <iframe width="95%" height="700" src="https://datastudio.google.com/embed/reporting/be51b150-dc89-4afb-8d12-30243958dd3d/page/cuLqB" frameborder="0" style="border:0" allowfullscreen></iframe>
         </center>
