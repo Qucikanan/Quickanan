@@ -22,7 +22,7 @@ body {
   </div>
   <section>
   <br>
-   <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspกรุณากรอก Number นักกีฬา ในช่องค้นหา</h4>
+   <h4>&nbsp&nbsp&nbsp&nbspกรุณากรอก Number นักกีฬา ในช่องค้นหา</h4>
       <center>
   <iframe width="95%" height="700" src="https://datastudio.google.com/embed/reporting/be51b150-dc89-4afb-8d12-30243958dd3d/page/cuLqB" frameborder="0" style="border:0" allowfullscreen></iframe>
         </center>
