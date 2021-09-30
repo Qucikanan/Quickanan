@@ -112,7 +112,7 @@
                 } else {
                     let profile = await liff.getProfile()
                     $("#img-upload").hide();
-                    let url = `${scriptURL}?opt=getname?uid=${profile.userID}`;
+                    let url = `${scriptURL}?opt=getname?uid=${profile.userId}`;
                     fetch(url)
                         .then(response => response.json())
                         .then(response => {
