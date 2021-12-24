@@ -19,9 +19,9 @@
   </head>  
   <body>
     <div class="container">
- <button id="btnShare"  class="btn btn-primary" onclick="sendShare()">Share Target Picker</button>
-  <button id="btnLogin" class="btn btn-success" onclick="liff.login()">Log In</button>
-  <button id="btnLogOut" class="btn btn-warning" onclick="logOut()">Log Out</button>
+ <button id="btnShare"  class="btn btn-primary" onclick="sendShare()"> คลิกเพื่อแชร์ให้เพื่อน </button>
+ <!-- <button id="btnLogin" class="btn btn-success" onclick="liff.login()">Log In</button>-->
+ <!-- <button id="btnLogOut" class="btn btn-warning" onclick="logOut()">Log Out</button>-->
     </div>
   <script src="https://static.line-scdn.net/liff/edge/versions/2.7.1/sdk.js"></script>
   <script>
@@ -41,7 +41,7 @@
     "aspectMode": "cover",
     "action": {
       "type": "uri",
-      "uri": "http://linecorp.com/"
+      "uri": "https://datastudio.google.com/reporting/63559ab3-0c6c-468e-bf76-189a19cc3373"
     }
   },
   "footer": {
@@ -117,7 +117,7 @@
                 "type": "button",
                 "action": {
                   "type": "uri",
-                  "label": "Share ให้เพื่อน",
+                  "label": "แชร์ให้เพื่อน",
                   "uri": "https://liff.line.me/1656755519-ROMobGGP"
                 },
                 "adjustMode": "shrink-to-fit"
