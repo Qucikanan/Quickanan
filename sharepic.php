@@ -118,7 +118,7 @@
                 "action": {
                   "type": "uri",
                   "label": "Share ให้เพื่อน",
-                  "uri": "https://quickanan.herokuapp.com/sharepic.php"
+                  "uri": "https://liff.line.me/1656755519-ROMobGGP"
                 },
                 "adjustMode": "shrink-to-fit"
               }
