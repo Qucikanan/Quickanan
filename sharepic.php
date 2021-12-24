@@ -117,8 +117,8 @@
                 "type": "button",
                 "action": {
                   "type": "uri",
-                  "label": "Share",
-                  "uri": "http://linecorp.com/"
+                  "label": "Share ให้เพื่อน",
+                  "uri": "https://quickanan.herokuapp.com/sharepic.php"
                 },
                 "adjustMode": "shrink-to-fit"
               }
@@ -131,8 +131,9 @@
     ],
     "flex": 0
   }
-
-}}
+}
+         
+}
         
       ])
        
