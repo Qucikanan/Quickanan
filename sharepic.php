@@ -29,97 +29,109 @@
       const result = await liff.shareTargetPicker([
        {
      "type": "flex",
-     "altText": "คณะทำงานพิจารณาปัญหาพิกัด",  // แก้ตรงนี้นะครับ
+     "altText": "HUN HIN IDPA 2022",  // แก้ตรงนี้นะครับ
      "contents": 
         
-        {
+       {
   "type": "bubble",
-  "size": "mega",
   "hero": {
-    "type": "box",
-    "layout": "horizontal",
-    "contents": [
-      {
-        "type": "image",
-        "url": "https://dl.dropbox.com/s/5j737c2oky7erbt/%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%A8%E0%B8%B8%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%81%E0%B8%A3.jpg",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://liff.line.me/1655653820-LEzAy2pe"
-        }
-      },
-      {
-        "type": "image",
-        "size": "xxs",
-        "position": "absolute",
-        "offsetEnd": "5px",
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpQtK2H5CE4CP7yO_JLRSpgDn5aU3HD_hsPkFqmzrNLD7IZ9pqnrdyNmsbfODD5LQQwjk&usqp=CAU",
-        "action": {
-          "type": "uri",
-          "label": "action",
-          "uri": "https://liff.line.me/1655653820-LEzAy2pe"
-        }
-      }
-    ]
+    "type": "image",
+    "url": "https://dl.dropbox.com/s/3dshmt1mrx16ijw/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B5%E0%B8%AC%E0%B8%B2.png",
+    "size": "full",
+    "aspectMode": "cover",
+    "action": {
+      "type": "uri",
+      "uri": "http://linecorp.com/"
+    }
   },
-  "body": {
+  "footer": {
     "type": "box",
     "layout": "vertical",
+    "spacing": "sm",
     "contents": [
-      {
-        "type": "text",
-        "text": "เอกสารประกอบการประชุม",
-        "weight": "bold",
-        "size": "md",
-        "align": "center"
-      },
       {
         "type": "box",
         "layout": "vertical",
         "contents": [
           {
-            "type": "text",
-            "text": "คณะทำงานพิจารณาปัญหาพิกัดอัตราศุลกากรประจำสำนักงานศุลกากรกรุงเทพ",
-            "wrap": true,
-            "align": "center"
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "style": "secondary",
+                "height": "sm",
+                "action": {
+                  "type": "uri",
+                  "label": "รายชื่อนักกีฬา",
+                  "uri": "https://datastudio.google.com/reporting/63559ab3-0c6c-468e-bf76-189a19cc3373"
+                }
+              }
+            ],
+            "margin": "sm",
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "style": "secondary",
+                "height": "sm",
+                "action": {
+                  "type": "uri",
+                  "label": "แจ้งแก้ไขข้อมูล K.เก๋",
+                  "uri": "http://line.me/ti/p/0CJB3-AoAu"
+                }
+              }
+            ],
+            "spacing": "sm",
+            "margin": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "Add line งาน HUA HIN",
+                  "uri": "https://lin.ee/3PZvTwW"
+                },
+                "style": "primary",
+                "margin": "none",
+                "height": "sm",
+                "adjustMode": "shrink-to-fit"
+              }
+            ],
+            "spacing": "sm",
+            "margin": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "uri",
+                  "label": "Share",
+                  "uri": "http://linecorp.com/"
+                },
+                "adjustMode": "shrink-to-fit"
+              }
+            ],
+            "spacing": "none",
+            "margin": "sm"
           }
         ]
-      },
-      {
-        "type": "box",
-        "layout": "vertical",
-        "contents": []
-      }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "horizontal",
-    "spacing": "sm",
-    "contents": [
-      {
-        "type": "button",
-        "style": "primary",
-        "action": {
-          "type": "uri",
-          "label": "เอกสารแนบ 1",
-          "uri": "https://drive.google.com/file/d/1gHcywfH8W_Hhpe0DTgwQiSy9YBQI2ta9/view?usp=sharing"
-        },
-        "height": "sm"
-      },
-      {
-        "type": "button",
-        "style": "secondary",
-        "action": {
-          "type": "uri",
-          "label": "เอกสารแนบ 2",
-          "uri": "https://drive.google.com/file/d/1aEUsTMGP82D3k5x3MJ9RMYCQ9AwChYDi/view?usp=sharing"
-        },
-        "height": "sm"
       }
     ],
     "flex": 0
   }
+
 }}
         
       ])
@@ -145,7 +157,7 @@
       window.location.reload()
     }
     async function main() {
-      await liff.init({ liffId: "1655653820-LEzAy2pe" })
+      await liff.init({ liffId: "1656755519-ROMobGGP" })
       if (liff.isLoggedIn()) {
         document.getElementById("btnShare").style.display = "block"
       if (!liff.isInClient()) {
