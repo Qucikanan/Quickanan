@@ -63,7 +63,7 @@
                 "height": "sm",
                 "action": {
                   "type": "uri",
-                  "label": "รายชื่อนักกีฬา Update 24-12-2564",
+                  "label": "รายชื่อนักกีฬา Update 28-12-2564",
                   "uri": "https://datastudio.google.com/reporting/63559ab3-0c6c-468e-bf76-189a19cc3373"
                 }
               }
