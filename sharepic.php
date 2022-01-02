@@ -63,7 +63,7 @@
                 "action": {
                   "type": "uri",
                   "label": "COF 1-11",
-                  "uri": "http://linecorp.com/"
+                  "uri": "https://linevoom.line.me/post/_dQFUVM9_DYZHIB43bQBeyTR2hM56T_9_vFm61Ag/1163998127903074564"
                 },
                 "style": "primary"
               }
