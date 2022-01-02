@@ -32,18 +32,17 @@
      "altText": "HUN HIN IDPA 2022",  // แก้ตรงนี้นะครับ
      "contents": 
         
-      {
+     {
   "type": "bubble",
   "hero": {
     "type": "image",
-    "url": "https://dl.dropbox.com/s/lxbq2jsgmptth8i/Slide1.PNG",
+    "url": "https://dl.dropbox.com/s/8dqo3q6o94hkc4q/Pic4.png",
     "size": "full",
     "aspectMode": "cover",
     "action": {
       "type": "uri",
       "uri": "https://datastudio.google.com/reporting/63559ab3-0c6c-468e-bf76-189a19cc3373"
-    },
-    "aspectRatio": "20:10"
+    }
   },
   "footer": {
     "type": "box",
@@ -65,7 +64,8 @@
                   "label": "COF 1-11",
                   "uri": "https://linevoom.line.me/post/_dQFUVM9_DYZHIB43bQBeyTR2hM56T_9_vFm61Ag/1163998127903074564"
                 },
-                "style": "primary"
+                "style": "primary",
+                "height": "sm"
               }
             ]
           },
