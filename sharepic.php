@@ -36,7 +36,7 @@
   "type": "bubble",
   "hero": {
     "type": "image",
-    "url": "https://dl.dropbox.com/s/8dqo3q6o94hkc4q/Pic4.png",
+    "url": "https://dl.dropbox.com/s/3dshmt1mrx16ijw/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B5%E0%B8%AC%E0%B8%B2.png",
     "size": "full",
     "aspectMode": "cover",
     "action": {
@@ -79,7 +79,7 @@
                 "height": "sm",
                 "action": {
                   "type": "uri",
-                  "label": "รายชื่อนักกีฬา Update 02-01-2565",
+                  "label": "รายชื่อนักกีฬา Update 11-01-2565",
                   "uri": "https://datastudio.google.com/reporting/63559ab3-0c6c-468e-bf76-189a19cc3373"
                 }
               }
