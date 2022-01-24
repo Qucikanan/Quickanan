@@ -32,11 +32,11 @@
      "altText": "HUN HIN IDPA 2022",  // แก้ตรงนี้นะครับ
      "contents": 
         
-     {
+    {
   "type": "bubble",
   "hero": {
     "type": "image",
-    "url": "https://dl.dropbox.com/s/3dshmt1mrx16ijw/%E0%B8%A3%E0%B8%B2%E0%B8%A2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B5%E0%B8%AC%E0%B8%B2.png",
+    "url": "https://dl.dropbox.com/s/befmiux7x8kxcm5/Presentatin2.png",
     "size": "full",
     "aspectMode": "cover",
     "action": {
@@ -59,27 +59,11 @@
             "contents": [
               {
                 "type": "button",
-                "action": {
-                  "type": "uri",
-                  "label": "COF 1-11",
-                  "uri": "https://linevoom.line.me/post/_dQFUVM9_DYZHIB43bQBeyTR2hM56T_9_vFm61Ag/1163998127903074564"
-                },
-                "style": "primary",
-                "height": "sm"
-              }
-            ]
-          },
-          {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-              {
-                "type": "button",
                 "style": "secondary",
                 "height": "sm",
                 "action": {
                   "type": "uri",
-                  "label": "รายชื่อนักกีฬา Update 20-01-2565",
+                  "label": "รายชื่อนักกีฬา Update 24-01-2565",
                   "uri": "https://datastudio.google.com/reporting/63559ab3-0c6c-468e-bf76-189a19cc3373"
                 }
               }
