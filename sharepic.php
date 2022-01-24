@@ -59,6 +59,24 @@
             "contents": [
               {
                 "type": "button",
+                "style": "primary",
+                "height": "sm",
+                "action": {
+                  "type": "uri",
+                  "label": "ใบคุมปืน",
+                  "uri": "https://drive.google.com/drive/folders/1zdj-uOeczR-xfmfhTQrU-GMYNVWkwFFT?usp=sharing"
+                }
+              }
+            ],
+            "margin": "sm",
+            "spacing": "sm"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "button",
                 "style": "secondary",
                 "height": "sm",
                 "action": {
